@@ -13,9 +13,9 @@
 
 	<!-- Favicons
 	================================================== -->
-	<link rel="shortcut icon" href="assets/img/favicons/favicon.ico">
-	<link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicons/favicon-120.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicons/favicon-152.png">
+	<link rel="shortcut icon" href="assets/img/logo.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="assets/img/logo.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="assets/img/logo.png">
 
 	<!-- Mobile Specific Metas
 	================================================== -->
@@ -38,5 +38,13 @@
 
 	<!-- Custom CSS-->
 	<link href="assets/css/custom.css" rel="stylesheet">
+	<script src="//d26lpennugtm8s.cloudfront.net/assets/blog_pt/snowstorm-min.js" async></script>
+<script type="text/javascript">
+snowStorm.snowColor = '#ffffff';
 
+snowStorm.flakesMaxActive = 200;
+
+snowStorm.useTwinkleEffect = true;
+
+</script>
 </head>

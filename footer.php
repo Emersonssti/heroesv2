@@ -11,6 +11,7 @@
 	<script src="assets/vendor/jquery/jquery-migrate.min.js"></script>
 	<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 	<script src="assets/js/core.js"></script>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 	
 	<!-- Vendor JS -->
 	
