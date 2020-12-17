@@ -2,7 +2,7 @@
 
 <!-- Content
 		================================================== -->
-		<main class="site-content site-content--center page" id="wrapper">
+		<main class="site-content site-content--center page" id="">
 			<div class="container container--large">
 				<div class="page-heading page-heading--default text-center w-100">
 					<div class="page-heading__subtitle h5">

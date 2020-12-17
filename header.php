@@ -41,7 +41,7 @@
 
 </head>
 
-<body class="preloader-is--active bg-image bg-fixed bg--texture-01 bg--dotted-3x3">
+<body class="preloader-is--active bg-image bg-fixed bg--texture-01">
 
 	<div class="site-wrapper site-layout--default">
 
