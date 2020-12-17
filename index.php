@@ -1,4 +1,4 @@
-<?php include "header.php"; ?>
+<?php include "inicio/header.php"; ?>
 
 <body class="site-layout--landing preloader-is--active bg-image bg-fixed bg--texture-05">
 
@@ -25,7 +25,7 @@
 			
 			<div class="site-content__center">
 				<h1 class="text-white landing-title"><span class="subtitle landing-subtitle">O maior X1 de Clash of Clans</span>Heroes Tournaments</h1>
-				<a href="#" id="entrar" class="btn btn-primary btn-lg btn--landing"><span>Go X1!</span></a>
+				<a href="home.php" id="#" class="btn btn-primary btn-lg btn--landing"><span>Go X1!</span></a>
 			</div>
 			
 		</main>
@@ -67,4 +67,4 @@
 		</div>
 	</div>
 
-<?php include "footer.php"; ?>
+<?php include "inicio/footer.php"; ?>
