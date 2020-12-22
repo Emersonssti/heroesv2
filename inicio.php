@@ -16,7 +16,7 @@
 						<div class="team-selection-item team-selection-item--style-1 text-center">
 							<a href="team-overview.html" class="team-selection-item__thumbnail">
 								<div class="team-selection-item__thumbnail-inner">
-									<img src="assets/img/samples/team-selection-thumb-01.jpg" alt="">
+									<img src="assets/img/th/th13.png" alt="">
 								</div>
 								<img class="team-selection-item__logo team-selection-item__logo--middle" src="assets/img/th/th13.png" srcset="assets/img/th/th13.png 2x" alt="">
 							</a>
@@ -28,7 +28,7 @@
 						<div class="team-selection-item team-selection-item--style-1 text-center">
 							<a href="team-overview.html" class="team-selection-item__thumbnail">
 								<div class="team-selection-item__thumbnail-inner">
-									<img src="assets/img/samples/team-selection-thumb-02.jpg" alt="">
+									<img src="assets/img/th/th12.png" alt="">
 								</div>
 								<img class="team-selection-item__logo team-selection-item__logo--middle" src="assets/img/th/th12.png" srcset="assets/img/th/th12.png 2x" alt="">
 							</a>
@@ -40,7 +40,7 @@
 						<div class="team-selection-item team-selection-item--style-1 text-center">
 							<a href="team-overview.html" class="team-selection-item__thumbnail">
 								<div class="team-selection-item__thumbnail-inner">
-									<img src="assets/img/samples/team-selection-thumb-03.jpg" alt="">
+									<img src="assets/img/th/th11.png" alt="">
 								</div>
 								<img class="team-selection-item__logo team-selection-item__logo--middle" src="assets/img/th/th11.png" srcset="assets/img/th/th11.png 2x" alt="">
 							</a>
@@ -52,7 +52,7 @@
 						<div class="team-selection-item team-selection-item--style-1 text-center">
 							<a href="team-overview.html" class="team-selection-item__thumbnail">
 								<div class="team-selection-item__thumbnail-inner">
-									<img src="assets/img/samples/team-selection-thumb-04.jpg" alt="">
+									<img src="assets/img/th/th10.png" alt="">
 								</div>
 								<img class="team-selection-item__logo team-selection-item__logo--middle" src="assets/img/th/th10.png" srcset="assets/img/th/th10.png 2x" alt="">
 							</a>
@@ -64,9 +64,9 @@
 						<div class="team-selection-item team-selection-item--style-1 text-center">
 							<a href="team-overview.html" class="team-selection-item__thumbnail">
 								<div class="team-selection-item__thumbnail-inner">
-									<img src="assets/img/samples/team-selection-thumb-04.jpg" alt="">
+									<img src="assets/img/th/th9.png" alt="">
 								</div>
-								<img class="team-selection-item__logo team-selection-item__logo--middle" src="assets/img/th/th9.png" srcset="assets/img/th/th9.png.png 2x" alt="">
+								<img class="team-selection-item__logo team-selection-item__logo--middle" src="assets/img/th/th9.png" srcset="assets/img/th/th9.png 2x" alt="">
 							</a>
 							<span class="team-selection-item__subtitle h6"  style="color: yellow;">Em Breve</span>
 							<h2 class="team-selection-item__title">TH 9</h2>
