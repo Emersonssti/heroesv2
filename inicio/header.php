@@ -7,9 +7,9 @@
 	<title>Heroes Tournaments</title>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="description" content="eSports Team &amp; Gaming HTML Template">
+	<meta name="description" content="Heroes Tournaments">
 	<meta name="author" content="Dan Fisher">
-	<meta name="keywords" content="esports team news HTML template">
+	<meta name="keywords" content="Heroes Tournaments">
 
 	<!-- Favicons
 	================================================== -->

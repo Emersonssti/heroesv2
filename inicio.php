@@ -11,54 +11,69 @@
 					<h1 class="page-heading__title h2">QUINTA TEMPORADA</h1>
 				</div>
 				<div class="row mt-sm-auto mb-sm-auto">
-					<div class="col-sm-6 col-lg-3">
+				<div class="col-sm-6 col-lg-1"></div>
+					<div class="col-sm-6 col-lg-2">
 						<div class="team-selection-item team-selection-item--style-1 text-center">
 							<a href="team-overview.html" class="team-selection-item__thumbnail">
 								<div class="team-selection-item__thumbnail-inner">
 									<img src="assets/img/samples/team-selection-thumb-01.jpg" alt="">
 								</div>
-								<img class="team-selection-item__logo team-selection-item__logo--middle" src="assets/img/th13.png" srcset="assets/img/team-selection-logo-01-140.png 2x" alt="">
+								<img class="team-selection-item__logo team-selection-item__logo--middle" src="assets/img/th/th13.png" srcset="assets/img/th/th13.png 2x" alt="">
 							</a>
-							<span class="team-selection-item__subtitle h6">Necromancers</span>
-							<h2 class="team-selection-item__title">Xenowatch</h2>
+							<span class="team-selection-item__subtitle h6" style="color: yellow;">Em breve</span>
+							<h2 class="team-selection-item__title">TH 13</h2>
 						</div>
 					</div>
-					<div class="col-sm-6 col-lg-3">
+					<div class="col-sm-6 col-lg-2">
 						<div class="team-selection-item team-selection-item--style-1 text-center">
 							<a href="team-overview.html" class="team-selection-item__thumbnail">
 								<div class="team-selection-item__thumbnail-inner">
 									<img src="assets/img/samples/team-selection-thumb-02.jpg" alt="">
 								</div>
-								<img class="team-selection-item__logo team-selection-item__logo--middle" src="assets/img/th12.png" srcset="assets/img/team-selection-logo-02-140.png 2x" alt="">
+								<img class="team-selection-item__logo team-selection-item__logo--middle" src="assets/img/th/th12.png" srcset="assets/img/th/th12.png 2x" alt="">
 							</a>
-							<span class="team-selection-item__subtitle h6">Necromancers</span>
-							<h2 class="team-selection-item__title">League of Heroes</h2>
+							<span class="team-selection-item__subtitle h6"  style="color: yellow;">Em Breve</span>
+							<h2 class="team-selection-item__title">TH 12</h2>
 						</div>
 					</div>
-					<div class="col-sm-6 col-lg-3">
+					<div class="col-sm-6 col-lg-2">
 						<div class="team-selection-item team-selection-item--style-1 text-center">
 							<a href="team-overview.html" class="team-selection-item__thumbnail">
 								<div class="team-selection-item__thumbnail-inner">
 									<img src="assets/img/samples/team-selection-thumb-03.jpg" alt="">
 								</div>
-								<img class="team-selection-item__logo team-selection-item__logo--middle" src="assets/img/th11.png" srcset="assets/img/team-selection-logo-03-140.png 2x" alt="">
+								<img class="team-selection-item__logo team-selection-item__logo--middle" src="assets/img/th/th11.png" srcset="assets/img/th/th11.png 2x" alt="">
 							</a>
-							<span class="team-selection-item__subtitle h6">Necromancers</span>
-							<h2 class="team-selection-item__title">Striker Go</h2>
+							<span class="team-selection-item__subtitle h6"  style="color: green;">Em andamento</span>
+							<h2 class="team-selection-item__title">TH11</h2>
 						</div>
 					</div>
-					<div class="col-sm-6 col-lg-3">
+					<div class="col-sm-6 col-lg-2">
 						<div class="team-selection-item team-selection-item--style-1 text-center">
 							<a href="team-overview.html" class="team-selection-item__thumbnail">
 								<div class="team-selection-item__thumbnail-inner">
 									<img src="assets/img/samples/team-selection-thumb-04.jpg" alt="">
 								</div>
-								<img class="team-selection-item__logo team-selection-item__logo--middle" src="assets/img/th10.png" srcset="assets/img/team-selection-logo-04-140.png 2x" alt="">
+								<img class="team-selection-item__logo team-selection-item__logo--middle" src="assets/img/th/th10.png" srcset="assets/img/th/th10.png 2x" alt="">
 							</a>
-							<span class="team-selection-item__subtitle h6">Necromancers</span>
-							<h2 class="team-selection-item__title">Fortdaite</h2>
+							<span class="team-selection-item__subtitle h6"  style="color: red;">Encerrado</span>
+							<h2 class="team-selection-item__title">TH 10</h2>
 						</div>
 					</div>
+					<div class="col-sm-6 col-lg-2">
+						<div class="team-selection-item team-selection-item--style-1 text-center">
+							<a href="team-overview.html" class="team-selection-item__thumbnail">
+								<div class="team-selection-item__thumbnail-inner">
+									<img src="assets/img/samples/team-selection-thumb-04.jpg" alt="">
+								</div>
+								<img class="team-selection-item__logo team-selection-item__logo--middle" src="assets/img/th/th9.png" srcset="assets/img/th/th9.png.png 2x" alt="">
+							</a>
+							<span class="team-selection-item__subtitle h6"  style="color: yellow;">Em Breve</span>
+							<h2 class="team-selection-item__title">TH 9</h2>
+						</div>
+					</div>
+				<div class="col-sm-6 col-lg-1"></div>
+
 				</div>
 			</div>
 		</main>
