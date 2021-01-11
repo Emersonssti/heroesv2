@@ -25,7 +25,7 @@
 			
 			<div class="site-content__center">
 				<h1 class="text-white landing-title"><span class="subtitle landing-subtitle">O maior X1 de Clash of Clans</span>Heroes Tournaments</h1>
-				<a href="home.php" id="#" class="btn btn-primary btn-lg btn--landing"><span>Go X1!</span></a>
+				<a href="inicio.php" id="#" class="btn btn-primary btn-lg btn--landing"><span>Go X1!</span></a>
 			</div>
 			
 		</main>
