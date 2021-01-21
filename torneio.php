@@ -24,16 +24,13 @@ $row_torneio = $sql_temporada->fetch(PDO::FETCH_NUM);
 					<div class="team-carousel__content">
 		
 						<!-- Section: Regras -->
-						<div class="team-carousel__item" data-icon="lineups">
+						<div class="team-carousel__item" data-icon="hardware">
 							<div class="row">
 								<div class="col-lg-6">
 									<h2 class="player-info-title h1">Regras</h2>
 
-									<h3 class="player-info-subtitle h4 text-uppercase">Fair Play</h3>
-									<p>O nosso torneio é Fair play e todos devem seguir as regras de jogo limpo/Fair Play, bem como os Termos de Serviço da Supercell.</p>
-									
-									<h3 class="player-info-subtitle h4 text-uppercase">INSCRIÇÃO</h3>
-									<p>Será feita através do site www.torneioheroes.com, na aba "Em Breve".</p>
+									<a href="#" class="btn btn-secondary">Abrir Regras</a>
+
 								
 								</div>
 							</div>
@@ -66,7 +63,7 @@ $row_torneio = $sql_temporada->fetch(PDO::FETCH_NUM);
 						<!-- Section: Achievements / End -->
 		
 						<!-- Section: Hardware -->
-						<div class="team-carousel__item" data-icon="hardware">
+						<div class="team-carousel__item" data-icon="lineups">
 							<div class="row">
 								<div class="col-lg-6">
 									<h2 class="player-info-title text-uppercase">Participantes</h2>
@@ -113,7 +110,7 @@ $row_torneio = $sql_temporada->fetch(PDO::FETCH_NUM);
 							<div class="row">
 								<div class="col-lg-6">
 									<h2 class="player-info-title text-uppercase">Inscrições</h2>
-									<h3 class="player-info-subtitle h5">Clique abaixo pra se inscrever!</h3>
+									<h3 class="player-info-subtitle h5">Clique aqui pra se inscrever!</h3>
 		
 								</div>
 							</div>
@@ -127,8 +124,6 @@ $row_torneio = $sql_temporada->fetch(PDO::FETCH_NUM);
 									<h2 class="player-info-title text-uppercase">Bracked</h2>
 									<h3 class="player-info-subtitle h5">Abaixo ficará o bracked!</h3>
 
-		
-		
 								</div>
 							</div>
 						</div>
