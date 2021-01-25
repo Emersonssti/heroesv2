@@ -3,7 +3,6 @@
 		<div class="site-overlay"></div>
 		<!-- Overlay / End -->
 
-	
 		<!-- Menu Panel -->
 		<div class="menu-panel">
 			<ul class="menu-panel__mobile-bar list-unstyled d-md-none">
@@ -14,10 +13,10 @@
 						<nav class="mobile-nav">
 							
 							<ul class="main-nav__list">
-							<li class=""><a href="inicio.php">Home</a></li>
-							<li class=""><a class="indisponivel" href="#">Notícias</a></li>
-							<li class=""><a class="indisponivel" href="#">Vídeos</a></li>
-							<li class=""><a class="indisponivel" href="#">Blog</a></li>
+							<li class=""><a href="#">Homezzz</a></li>
+							<li class=""><a href="#">Notícias</a></li>
+							<li class=""><a href="#">Vídeos</a></li>
+							<li class=""><a href="#">Blog</a></li>
 				
 							<!-- <li class="">
 								<a href="#">Shop</a>
@@ -33,6 +32,26 @@
 						<!-- Mobile Navigation / End -->
 					</div>
 				</li>
+				<li class="mobile-bar-item">
+					<a class="mobile-bar-item__header indisponivel" href="#">
+						Home
+					</a>
+				</li>
+				<li class="mobile-bar-item">
+					<a class="mobile-bar-item__header indisponivel" href="#">
+						Notícias
+					</a>
+				</li>
+				<li class="mobile-bar-item">
+					<a class="mobile-bar-item__header indisponivel" href="#">
+						Vídeos
+					</a>
+				</li>
+				<li class="mobile-bar-item">
+					<a class="mobile-bar-item__header indisponivel" href="#">
+						Blog
+					</a>
+				</li>
 			</ul>
 
 	
@@ -41,10 +60,10 @@
 					<div id="dl-menu" class="dl-menuwrapper">
 						<!-- <button class="dl-trigger">Open Menu</button> -->
 						<ul class="dl-menu dl-menuopen">
-							<li class=""><a class="indisponivel" href="inicio.php">Home</a></li>
-							<li class=""><a class="indisponivel" href="#">Notícias</a></li>
-							<li class=""><a class="indisponivel" href="#">Vídeos</a></li>
-							<li class=""><a class="indisponivel" href="#">Blog</a>
+							<li class=""><a href="#">Home</a></li>
+							<li class=""><a href="#">Notícias</a></li>
+							<li class=""><a href="#">Vídeos</a></li>
+							<li class=""><a href="#">Blog</a>
 						</ul>
 					</div>
 				</div>
