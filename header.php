@@ -52,7 +52,7 @@
 		
 			<!-- Logo - Image Based -->
 			<div class="header-logo header-logo--img">
-				<a href="index.html"><img src="assets/img/logo.png" srcset="assets/img/logo@2x.png 2x" alt="Necromancers"></a>
+				<a href="index.php"><img src="assets/img/logo.png" srcset="assets/img/logo@2x.png 2x" alt="Necromancers"></a>
 			</div>
 			<!-- Logo - Image Based / End -->
 		
@@ -60,10 +60,10 @@
 			<!-- Main Navigation -->
 			<nav class="main-nav">
 				<ul class="main-nav__list">
-					<li class=""><a href="#">Home</a></li>
-					<li class=""><a href="#">Notícias</a></li>
-					<li class=""><a href="#">Vídeos</a></li>
-					<li class=""><a href="#">Blog</a></li>
+					<li class=""><a href="inicio.php">Home</a></li>
+					<li class=""><a class="indisponivel" href="#">Notíciaszzz</a></li>
+					<li class=""><a class="indisponivel" href="#">Vídeos</a></li>
+					<li class=""><a class="indisponivel" href="#">Blog</a></li>
 		
 					<!-- <li class="">
 						<a href="#">Shop</a>
@@ -78,34 +78,7 @@
 			</nav>
 			<!-- Main Navigation / End -->
 		
-			<!-- Header Actions -->
-			<div class="header-actions">
-				<div class="header-account hide">
-					<div class="header-account__body">
-						Hello!
-						<div class="header-account__name">James Spiegel</div>
-					</div>
-					<div class="header-account__icon">
-						<a href="shop-account-settings.html">
-							<svg role="img" class="df-icon df-icon--account">
-								<use xlink:href="assets/img/necromancers.svg#account"/>
-							</svg>
-						</a>
-						<a href="login-register.html">
-							<svg role="img" class="df-icon df-icon--logout">
-								<use xlink:href="assets/img/necromancers.svg#logout"/>
-							</svg>
-						</a>
-					</div>
-				</div>
-				<div class="header-menu-toggle">
-					<div class="header-menu-toggle__inner">
-						<span>&nbsp;</span>
-						<span>&nbsp;</span>
-						<span>&nbsp;</span>
-					</div>
-				</div>
-			</div>
+		
 		</header>
 		<!-- Header / End -->
 
