@@ -113,11 +113,14 @@ $result = $sql->fetch(PDO::FETCH_NUM);
 						<!-- Section: Replay -->
 						<div class="team-carousel__item" data-icon="replay">
 							<div class="row">
-								<div class="col-lg-6">
-									<h2 class="player-info-title text-uppercase">Bracket</h2>
-									<h3 class="player-info-subtitle h5">Abaixo ficará o bracket!</h3>
-
-								</div>
+							<div class="col-lg-6">
+								<h2 class="player-info-title text-uppercase">Bracket</h2>
+									
+									<h3 class="player-info-subtitle h4 text-uppercase">Final</h3>
+									<h3 class="player-info-subtitle h4 text-uppercase">Fase de Grupos</h3>
+									<h3 class="player-info-subtitle h4 text-uppercase">Classificatória</h3>
+									
+							</div>
 							</div>
 						</div>
 						<!-- Section: Replay / End -->
