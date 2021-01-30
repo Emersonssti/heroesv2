@@ -80,17 +80,32 @@ $("#entrar").click(function () {
         $.ajax({ url: "grava_inscricao.php?id_torneio=" + ID_TORNEIO + "&nome=" + NOME + "&tag_vila=" + TAG_VILA + "&email=" + EMAIL + "&discord_nome=" + DISCORD_NOME + "&discord_tag=" + DISCORD_TAG + "&data_nascimento=" + DATA_NASCIMENTO + "&twitter=" + TWITTER, cache: false }).done(function (txtstatus) {
   
           // alert(txtstatus);
-          if(txtstatus == 0){
-            swal('Erro!', 'Email já cadastrada nessa temporada.', 'error');
+
+            if (txtstatus == 0) {
+              swal('Erro!', 'Email já cadastrada nessa temporada.', 'error')
+                  .then((willDelete) => {
+                      if (willDelete) {
+                          location.replace("torneio.php?torneio="+ID_TORNEIO);
+                      }
+                  })
     
           }
           else if(txtstatus == 1){
-            swal('Erro!', 'Vila já cadastrada nessa temporada.', 'error');
-    
+            swal('Erro!', 'Vila já cadastrada nessa temporada.', 'error')
+            .then((willDelete) => {
+                if (willDelete) {
+                    location.replace("torneio.php?torneio="+ID_TORNEIO);
+                }
+            })
           
           }else if(txtstatus == 2){
-            swal('Sucesso!', 'Cadastro realizado com sucesso! Boa sorte! ;-)', 'success');
-    
+           swal('Sucesso!', 'Cadastro realizado com sucesso! Boa sorte! ;-)', 'success')
+            .then((willDelete) => {
+                if (willDelete) {
+                    location.replace("torneio.php?torneio="+ID_TORNEIO);
+                }
+            })
+
           }
     
         })

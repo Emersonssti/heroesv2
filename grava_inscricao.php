@@ -47,11 +47,13 @@ if($rowvalida_email[0] > 0){
 } else if($rowvalida_vila[0] > 0){
     echo 1;
 }
-
 else{
     $insert_inscricao = $db_heroes->query("INSERT INTO inscricao (ID_TORNEIO, NOME, TAG_VILA, EMAIL, DISCORD_NOME, TWITTER, DATA_NASCIMENTO, NOME_VILA, DISCORD_TAG) VALUES ('" . $id_torneio . "','" . $nome."', '" . $tag_vila."', '" . $email."', '" . $discord_nome."', '" . $twitter."', '" . $data_nascimento ."', '" . $nome_vila ."', '" . $discord_tag ."')");
-    echo 2;
+        include "enviar_email.php"; 
+        echo 2;
+    
 }
+
 
 
 ?>
