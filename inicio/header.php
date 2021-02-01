@@ -38,13 +38,13 @@
 
 	<!-- Custom CSS-->
 	<link href="assets/css/custom.css" rel="stylesheet">
-	<script src="//d26lpennugtm8s.cloudfront.net/assets/blog_pt/snowstorm-min.js" async></script>
+	<!-- <script src="//d26lpennugtm8s.cloudfront.net/assets/blog_pt/snowstorm-min.js" async></script> -->
 <script type="text/javascript">
-snowStorm.snowColor = '#ffffff';
+// snowStorm.snowColor = '#ffffff';
 
-snowStorm.flakesMaxActive = 200;
+// snowStorm.flakesMaxActive = 200;
 
-snowStorm.useTwinkleEffect = true;
+// snowStorm.useTwinkleEffect = true;
 
 </script>
 </head>
