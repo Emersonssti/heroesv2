@@ -31,7 +31,7 @@ switch ($TH) {
 
 
 if($ID_TORNEIO == ""){
-    $insert_torneio = $db_heroes->query("INSERT INTO torneio (NOME, TH, ID_TEMPORADA, ID_REGRAS, ID_PREMIACAO, ID_AGENDA, ID_BRACKET, ID_STATUS, IMG) VALUES ('" .$NOME. "','" .$TH. "','" .$ID_TEMPORADA. "','" .$ID_REGRAS. "','" .$ID_PREMIACAO. "','" .$ID_AGENDA. "','" .$LINK_BRACKET. "','" .$ID_STATUS. "', '" .$IMG_TH. "')");
+    $insert_torneio = $db_heroes->query("INSERT INTO torneio (NOME, TH, ID_TEMPORADA, ID_REGRAS, ID_PREMIACAO, ID_AGENDA, ID_BRACKET, ID_STATUS, IMG_TH) VALUES ('" .$NOME. "','" .$TH. "','" .$ID_TEMPORADA. "','" .$ID_REGRAS. "','" .$ID_PREMIACAO. "','" .$ID_AGENDA. "','" .$LINK_BRACKET. "','" .$ID_STATUS. "', '" .$IMG_TH. "')");
 
     if(!$insert_torneio){
         echo 0;

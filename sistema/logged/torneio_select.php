@@ -13,6 +13,7 @@ if(!$row){
   $id_agenda = "";
   $bracket = "";
   $status_ = "";
+  $id_torneio = "";
   
 }else{
   $nome = $row[0];
@@ -23,7 +24,7 @@ if(!$row){
   $id_agenda = $row[5];
   $id_bracket = $row[6];
   $status_ = $row[7];
-
+  $id_torneio = $_GET["id_torneio"];
 }
 
 ?>

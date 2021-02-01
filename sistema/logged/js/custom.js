@@ -26,6 +26,7 @@ $("#gravar_torneio").click(function(){
     var LINK_BRACKET = $('#link_bracket').val();
     var ID_STATUS = $('#id_status').val();
    
+
     $.ajax({ url:'torneio_grava.php?nome=' + NOME + '&th=' + TH + '&id_temporada=' + ID_TEMPORADA+ '&id_torneio=' + ID_TORNEIO + '&id_regras=' + ID_REGRAS+ '&id_premiacao=' + ID_PREMIACAO+ '&id_agenda=' + ID_AGENDA + '&link_bracket=' + LINK_BRACKET + '&id_status=' + ID_STATUS, cache: false }).done(function (txtstatus) {
  
     console.log(txtstatus);
@@ -64,6 +65,8 @@ $("#gravar_noticia").click(function(){
     var URL_FOTO = $('#url_foto').val();
     var URL_FONTE = $('#url_fonte').val();
    
+    
+
     $.ajax({ url:'noticias_grava.php?titulo=' + TITULO + '&data=' + DATA + '&fonte=' + FONTE + '&url_foto=' + URL_FOTO+ '&url_fonte=' + URL_FONTE + '&id_noticia=' + ID_NOTICIA, cache: false }).done(function (txtstatus) {
  
     
