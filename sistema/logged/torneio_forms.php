@@ -16,8 +16,6 @@
             </div>
           </div>
           
-
-
           <!-- Container-fluid starts-->
           <div class="container-fluid" >
             <div class="row">
@@ -36,149 +34,64 @@
                   </div>
 
                   <div class="col-md-2">
-                      <div class="form-group">
-                          <label>Centro de Vila</label>
-                          <input class="form-control" id="torneio_th" maxlength="2" value="<? echo $th;?>" type="text">
-                      </div>
+                    <div class="form-group">
+                        <label>Centro de Vila</label>
+                        <input class="form-control" id="torneio_th" maxlength="2" value="<? echo $th;?>" type="text">
                     </div>
+                  </div>
 
-                  <div class="col-md-12">
+                  <div class="col-md-3">
                       <div class="form-group">
-                          <label>Descrição</label>
-                          <input class="form-control" id="torneio_descricao" value="<? echo $descricao;?>" type="text">
+                        <label>Temporada</label>
+                        <select class="form-control " id="id_temporada">
+                        <? include "combo/temporada.php"; ?>
+                        </select>
                       </div>
                   </div>
 
-                  <div class="col-md-12">
-                    <div class="form-group">
+                  <div class="col-md-3">
+                      <div class="form-group">
                         <label>Regras</label>
-                        <textarea class="form-control" rows="5" cols="5" id="regras"><? echo $regras; ?></textarea>
-                    </div>
+                        <select class="form-control " id="id_regras">
+                        <? include "combo/regras.php"; ?>
+                        </select>
+                      </div>
                   </div>
 
-                  <div class="col-md-12">
+                  <div class="col-md-3">
+                      <div class="form-group">
+                        <label>Premiação</label>
+                        <select class="form-control " id="id_premiacao">
+                        <? include "combo/premiacao.php"; ?>
+                        </select>
+                      </div>
+                  </div>
+
+                  <div class="col-md-3">
+                      <div class="form-group">
+                        <label>Agenda</label>
+                        <select class="form-control " id="id_agenda">
+                        <? include "combo/agenda.php"; ?>
+                        </select>
+                      </div>
+                  </div>
+
+                  <div class="col-md-9">
                     <div class="form-group">
-                        <label>Calendário</label>
-                        <textarea class="form-control" rows="5" cols="5" id="calendario"><? echo $calendario; ?></textarea>
+                        <label>Link Bracket</label>
+                        <input class="form-control" id="link_bracket" value="<? echo $th;?>" type="text">
                     </div>
-                  </div>
-
-                  <div class="col-md-12">
-                    <div class="form-group">
-                        <label>Prêmios</label>
-                        <textarea class="form-control" rows="5" cols="5" id="premios"><? echo $premios; ?></textarea>
-                    </div>
-                  </div>
-
-                  <div class="col-md-12">
-                      <div class="form-group">
-                          <label>URL IMAGEM</label>
-                          <input class="form-control" id="torneio_url_img" value="<? echo $url_img;?>" maxlength="255" type="text">
-                      </div>
-                  </div>                 
-
-                    <div class="col-md-3">
-                      <div class="form-group">
-                          <label>Início Inscrição</label>
-                          <input class="form-control" id="torneio_inicio_insc" value="<? echo $inicio_inscricao;?>" type="date">
-                      </div>
-                    </div>
-
-                    <div class="col-md-3">
-                      <div class="form-group">
-                          <label>Final Inscrição</label>
-                          <input class="form-control" id="torneio_final_insc" value="<? echo $final_inscricao;?>" type="date">
-                      </div>
-                    </div>
-
-                    <div class="col-md-3">
-                      <div class="form-group">
-                          <label> Classificatória</label>
-                          <input class="form-control" id="torneio_classificatoria"  value="<? echo $classificatoria;?>" type="date">
-                      </div>
-                    </div>
-
-                    <div class="col-md-3">
-                      <div class="form-group">
-                          <label> Fase de Grupo</label>
-                          <input class="form-control" id="torneio_fase_grupo"  value="<? echo $fase_grupo;?>" type="date">
-                      </div>
-                    </div>
-
-                    <div class="col-md-3">
-                      <div class="form-group">
-                          <label>Semifinal</label>
-                          <input class="form-control" id="torneio_semifinal" value="<? echo $semifinal;?>" type="date">
-                      </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="form-group">
-                          <label>Final</label>
-                          <input class="form-control" id="torneio_final" value="<? echo $final;?>" type="date">
-                        </div>
-                    </div>
-                    
+                  </div>             
+               
                     <div class="col-md-3">
                         <div class="form-group">
                           <label>Status</label>
-                          <select class="form-control " id="torneio_status">
+                          <select class="form-control " id="id_status">
                           <? $status = "1,2,3,4"; include "combo/combo_status.php"; ?>
                           </select>
                         </div>
                     </div>
-
-                    <div class="col-md-4">
-                        <div class="form-group">
-                          <label>Primeiro</label>
-                          <select class="form-control " id="torneio_primeiro">
-                            <? echo $primeiro?>
-                          <? include "combo/jogador_torneio.php"; ?>
-                          </select>
-                        </div>
-                    </div>
-
-                    <div class="col-md-8">
-                        <div class="form-group">
-                            <label>URL Primeiro Colocado</label>
-                            <input class="form-control" id="torneio_url_jogador_1" value="<? echo $url_img_1;?>" maxlength="300" type="text">
-                        </div>
-                    </div> 
-
-                    <div class="col-md-4">
-                        <div class="form-group">
-                          <label>Segundo</label>
-                          <select class="form-control " id="torneio_segundo">
-                          <? echo $segundo?>
-                          <? include "combo/jogador_torneio.php"; ?>
-                          </select>
-                        </div>
-                    </div>
-
-                    <div class="col-md-8">
-                        <div class="form-group">
-                            <label>URL Segundo Colocado</label>
-                            <input class="form-control" id="torneio_url_jogador_2" value="<? echo $url_img_2;?>" maxlength="300" type="text">
-                        </div>
-                    </div> 
-
-                    <div class="col-md-4">
-                        <div class="form-group">
-                          <label>Terceiro</label>
-                          <select class="form-control " id="torneio_terceiro">
-                          <? echo $terceiro?>
-                          <? include "combo/jogador_torneio.php"; ?>
-                          </select>
-                        </div>
-                    </div>
-
-                    <div class="col-md-8">
-                        <div class="form-group">
-                            <label>URL Terceiro Colocado</label>
-                            <input class="form-control" id="torneio_url_jogador_3" value="<? echo $url_img_3;?>" maxlength="300" type="text">
-                        </div>
-                    </div> 
-
+                 
                     <div class="col-md-12">
                       <div class="form-group" style="float:right;">
                         <a href="torneio_list.php"> <button   class="btn btn-danger">Cancelar</button> </a>

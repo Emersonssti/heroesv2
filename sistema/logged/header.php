@@ -4,13 +4,14 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Heroes Admin.">
-    <meta name="keywords" content="admin template, Cuba admin template, dashboard template, flat admin template, responsive admin template, web app">
-    <meta name="author" content="pixelstrap">
-    <link rel="icon" href="../../img/logo-icon.png" type="image/x-icon">
-    <link rel="shortcut icon" href="../../logo-icon.png" type="image/x-icon">
-    <title>Heroes</title>
+    <meta name="viewport" content="Heroes Administração">
+    <meta name="description" content="Heroes Administração">
+    <meta name="keywords" content="Heroes Administração">
+    <meta name="author" content="Heroes Administração">
+    <link rel="shortcut icon" href="../assets/images/logo.png">
+	  <link rel="apple-touch-icon" sizes="120x120" href="../assets/images/logo.png">
+	  <link rel="apple-touch-icon" sizes="152x152" href="../assets/images/logo.png">
+    <title>Heroes Administração</title>
    <!-- Google font-->
    <link href="https://fonts.googleapis.com/css?family=Rubik:400,400i,500,500i,700,700i&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900&amp;display=swap" rel="stylesheet">
@@ -71,7 +72,7 @@
             
               <li><a class="text-dark" href="#!" onclick="javascript:toggleFullScreen()"><i data-feather="maximize"></i></a></li>
               <li class="onhover-dropdown p-0">
-                <div class="media profile-media"><img class="b-r-10" src="../assets/images/dashboard/Profile.jpg" alt="">
+                <div class="media profile-media"><img class="b-r-10" src="../assets/images/<? echo $img;?>" alt="">
                   <div class="media-body"><span>Olá, <?php echo $nome_user ?></span>
                     <p class="mb-0 font-roboto">Opções <i class="middle fa fa-angle-down"></i></p>
                   </div>
@@ -123,3 +124,4 @@
           </nav>
         </header>
         <style>input{ text-transform: uppercase;}</style>
+

@@ -10,7 +10,7 @@ $twitter =  $_GET["twitter"];
 $data_nascimento = $_GET["data_nascimento"];
 $discord_tag = '#'.$_GET["discord_tag"];
 
-//Busca nome da vila para evitar erro no ajax
+//////////////// Busca nome da vila para evitar erro no ajax
 $token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiIsImtpZCI6IjI4YTMxOGY3LTAwMDAtYTFlYi03ZmExLTJjNzQzM2M2Y2NhNSJ9.eyJpc3MiOiJzdXBlcmNlbGwiLCJhdWQiOiJzdXBlcmNlbGw6Z2FtZWFwaSIsImp0aSI6IjVjMmMzYWVkLTJlNzEtNDI3ZC05OTVlLTFjOGQxMTFjMWYxYyIsImlhdCI6MTYxMTUyNDU2OSwic3ViIjoiZGV2ZWxvcGVyLzE0YTdhZjExLTU0MzQtYTc0MC0wNWVjLTEzMmM5MmJjNmUyOSIsInNjb3BlcyI6WyJjbGFzaCJdLCJsaW1pdHMiOlt7InRpZXIiOiJkZXZlbG9wZXIvc2lsdmVyIiwidHlwZSI6InRocm90dGxpbmcifSx7ImNpZHJzIjpbIjE3Ny4yMjEuMjE3Ljk2Il0sInR5cGUiOiJjbGllbnQifV19.RkeZT6zwBN7LPvOnxQ9m1lHyKAOoVlYTB5RYfAVajbt5SGKXg4t2NhfprvfhM36AbWs9sD82CSIttBtfHHDd_g";
 
 $url = "https://api.clashofclans.com/v1/players/" . urlencode($tag_vila);
@@ -49,7 +49,9 @@ if($rowvalida_email[0] > 0){
 }
 else{
     $insert_inscricao = $db_heroes->query("INSERT INTO inscricao (ID_TORNEIO, NOME, TAG_VILA, EMAIL, DISCORD_NOME, TWITTER, DATA_NASCIMENTO, NOME_VILA, DISCORD_TAG) VALUES ('" . $id_torneio . "','" . $nome."', '" . $tag_vila."', '" . $email."', '" . $discord_nome."', '" . $twitter."', '" . $data_nascimento ."', '" . $nome_vila ."', '" . $discord_tag ."')");
-        include "enviar_email.php"; 
+    $insert_ranking = $db_heroes->query("INSERT INTO ranking (ID_TORNEIO, NOME_JOGADOR, TAG_VILA, NOME_VILA) VALUES ('" . $id_torneio . "','" . $nome."', '" . $tag_vila."', '" . $nome_vila ."')");
+       
+    include "enviar_email.php"; 
         echo 2;
     
 }

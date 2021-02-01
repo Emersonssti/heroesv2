@@ -18,38 +18,29 @@ $("#gravar_torneio").click(function(){
     var ID_TORNEIO = $('#id_torneio').val();
     var NOME = $('#torneio_nome').val();
     var TH = $('#torneio_th').val();
-    var INICIO_INSC = $('#torneio_inicio_insc').val();
-    var FINAL_INSC = $('#torneio_final_insc').val();
-    var CLASSIFICATORIA = $('#torneio_classificatoria').val();
-    var FASE_GRUPO = $('#torneio_fase_grupo').val();
-    var SEMIFINAL = $('#torneio_semifinal').val();
-    var FINAL = $('#torneio_final').val();
-    var DESCRICAO = $('#torneio_descricao').val();
-    var URL_IMG = $('#torneio_url_img').val();
-    var STATUS = $('#torneio_status').val();
-    var PRIMEIRO = $('#torneio_primeiro').val();
-    var SEGUNDO = $('#torneio_segundo').val();
-    var TERCEIRO = $('#torneio_terceiro').val();
-    var URL_PRIMEIRO = $('#torneio_url_jogador_1').val();
-    var URL_SEGUNDO = $('#torneio_url_jogador_2').val();
-    var URL_TERCEIRO = $('#torneio_url_jogador_3').val();
-    var REGRAS = $('#regras').val();
-    var CALENDARIO = $('#calendario').val();
-    var PREMIOS = $('#premios').val();
+
+    var ID_TEMPORADA = $('#id_temporada').val();
+    var ID_REGRAS = $('#id_regras').val();
+    var ID_PREMIACAO = $('#id_premiacao').val();
+    var ID_AGENDA = $('#id_agenda').val();
+    var LINK_BRACKET = $('#link_bracket').val();
+    var ID_STATUS = $('#id_status').val();
    
-    $.ajax({ url:'torneio_grava.php?nome=' + NOME + '&th=' + TH + '&inicio_insc=' + INICIO_INSC + '&final_insc=' + FINAL_INSC+ '&classificatoria=' + CLASSIFICATORIA+ '&fase_grupo=' + FASE_GRUPO + '&semifinal=' + SEMIFINAL + '&final=' + FINAL + '&status=' + STATUS + '&id_torneio=' + ID_TORNEIO + '&descricao=' + DESCRICAO + '&url_img=' + URL_IMG+ '&primeiro=' + PRIMEIRO + '&segundo=' + SEGUNDO + '&terceiro=' + TERCEIRO + '&url_primeiro=' + URL_PRIMEIRO + '&url_segundo=' + URL_SEGUNDO + '&url_terceiro=' + URL_TERCEIRO + '&calendario=' + CALENDARIO + '&regras=' + REGRAS + '&premios=' + PREMIOS, cache: false }).done(function (txtstatus) {
+    $.ajax({ url:'torneio_grava.php?nome=' + NOME + '&th=' + TH + '&id_temporada=' + ID_TEMPORADA+ '&id_torneio=' + ID_TORNEIO + '&id_regras=' + ID_REGRAS+ '&id_premiacao=' + ID_PREMIACAO+ '&id_agenda=' + ID_AGENDA + '&link_bracket=' + LINK_BRACKET + '&id_status=' + ID_STATUS, cache: false }).done(function (txtstatus) {
  
+    console.log(txtstatus);
      
        if(txtstatus == 0){
         swal("Não foi possível salvar os dados, contate o suporte", '', 'error');
 
        }else if( txtstatus == 1){
 
-        swal("Torneio criado com sucesso!");
-        var delay=2000; //1 seconds
-        setTimeout(function(){
-            location.replace("../logged/torneio_list.php");
-        },delay);
+        swal("Torneio criado com sucesso!")
+        .then((willDelete) => {
+            if (willDelete) {
+                location.replace("../logged/torneio_list.php");
+            }
+        })
 
        }else if( txtstatus == 2){
         swal("Registro Alterado com sucesso!");

@@ -1,5 +1,10 @@
 <?php include "header.php"; ?>
+<style>
+th{color:black;}
+
+</style>
 <? $id_torneio = $_GET["torneio"];
+
 
 $sql = $db_heroes->prepare("SELECT
 	ID_TORNEIO,
@@ -8,7 +13,9 @@ $sql = $db_heroes->prepare("SELECT
 	ID_REGRAS,
 	ID_PREMIACAO,
 	TH,
-	ID_AGENDA
+	ID_AGENDA,
+	ID_BRACKET,
+	ID_STATUS
 FROM torneio
 WHERE ID_TORNEIO = '".$id_torneio."'");
 $sql->execute();
@@ -22,7 +29,22 @@ $result = $sql->fetch(PDO::FETCH_NUM);
 			<div class="container container--large">
 				<div class="team-carousel">
 					<div class="team-carousel__content">
-	
+
+
+<!--  Regras -->
+<div class="team-carousel__item" data-icon="lineups">
+	<div class="row">
+		<div class="col-lg-6">
+			<h2 class="player-info-title h1">Ranking</h2>
+
+				<a data-toggle="modal" data-target="#ranking" class="btn btn-secondary">Abrir Ranking</a>
+		
+		</div>
+	</div>
+</div>
+<!-- /// Regras /// -->
+
+
 
 <!--  Regras -->
 <div class="team-carousel__item" data-icon="lineups">
@@ -110,20 +132,19 @@ $result = $sql->fetch(PDO::FETCH_NUM);
 <!-- /// Inscrições /// -->
 
 
-						<!-- Section: Replay -->
-						<div class="team-carousel__item" data-icon="replay">
-							<div class="row">
-							<div class="col-lg-6">
-								<h2 class="player-info-title text-uppercase">Bracket</h2>
-									
-									<h3 class="player-info-subtitle h4 text-uppercase">Final</h3>
-									<h3 class="player-info-subtitle h4 text-uppercase">Fase de Grupos</h3>
-									<h3 class="player-info-subtitle h4 text-uppercase">Classificatória</h3>
-									
-							</div>
-							</div>
-						</div>
-						<!-- Section: Replay / End -->
+<!-- Braket -->
+<div class="team-carousel__item" data-icon="replay">
+	<div class="row">
+	<div class="col-lg-6">
+		<h2 class="player-info-title text-uppercase">Bracket</h2>
+			
+		<a href="<?= $result[7];?>" class="btn btn-secondary">Bracket</a>
+		<a data-toggle="modal" data-target="#regras" class="btn btn-secondary">Ranking</a>
+
+	</div>
+	</div>
+</div>
+<!-- /// Bracket /// -->
 		
 					</div>
 				</div>
@@ -219,6 +240,75 @@ $result = $sql->fetch(PDO::FETCH_NUM);
 <!-- /// Modal participantes ///-->
 
 <!-- Modal inscrições -->
+<div class="modal fade" id="ranking" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="ranking">Ranking <?=$result[1];?></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+		<div class="col-md-12">
+
+		<div class="table-responsive mt-sm-auto mb-sm-auto">
+					<table class="table matches-table standings-table">
+						<thead>
+							<tr>
+								<th></th>
+								<th style="color: black;">Player</th>
+								<th>Vitórias</th>
+								<th>Estrelas</th>
+								<th>%</th>
+							</tr>
+						</thead>
+						<tbody>
+
+						<?
+							$sql_ranking = "SELECT
+								NOME_VILA,
+								NOME_JOGADOR,
+								VITORIA,
+								ESTRELA,
+								PORCENTAGEM
+							FROM ranking
+							WHERE ID_TORNEIO = '".$id_torneio."' ORDER BY VITORIA, ESTRELA, PORCENTAGEM";
+							foreach ($db_heroes->query($sql_ranking) as $result_ranking){ 
+						?>
+
+							<tr>
+								<td>1</td>
+							<td class="standings-table__team">
+									<figure class="match-team" role="group">
+										
+										<figcaption>
+											<div class="match-team__name"><?=  $result_ranking[0];?></div>
+												<div class="match-team__country "><?=  $result_ranking[1];?></div>
+										</figcaption>
+									</figure>
+								</td>
+								<td><?=  $result_ranking[2];?></td>
+								<td class="standings-table__wins"><?=  $result_ranking[3];?></td>
+								<td class="standings-table__losses"><?=  $result_ranking[4];?>%</td>
+							</tr>
+
+							<?}?>
+						</tbody>
+					</table>
+				</div>
+			</div>
+	  </div>
+	  
+      <div class="modal-footer">
+		  .
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal inscrições -->
 <div class="modal fade" id="inscricao" tabindex="-1" role="dialog" aria-labelledby="inscricao" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -276,56 +366,7 @@ $result = $sql->fetch(PDO::FETCH_NUM);
 </div>
 
 
-<!-- <div class="modal fade" id="inscricao" tabindex="-1" role="dialog" aria-labelledby="inscricao" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="inscricao">Inscrições</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
 
-	  <div class="col-md-12">
-
-						<div class="form-group">
-							<input type="text" class="form-control" id="nome" placeholder="Nome (seu nome)*">
-						</div>
-
-						<div class="form-group">
-							<input type="text" class="form-control" id="tag_vila" placeholder="#Tag vila*:">
-						</div>
-
-						<div class="form-group">
-							<input type="text" class="form-control" id="email" placeholder="Email*">
-						</div>
-
-						<div class="form-group">
-							<input type="text" class="form-control" id="nome_discord" placeholder="Nome Discord*">
-						</div>
-
-						<div class="form-group">
-							<input type="text" class="form-control" id="tag_discord" placeholder="Tag Discord*">
-						</div>
-
-						<div class="form-group">
-							<input type="text" class="form-control" id="data_nascimento" placeholder="Data de Nascimento">
-						</div>
-
-						<div class="form-group">
-							<input type="text" class="form-control" id="twitter" placeholder="Twitter">
-						</div>
-
-						<button class="btn btn-primary btn-block register-form__button" id="aplicar">Aplicar!</button>
-				
-				</div>
-      </div>
-
-    </div>
-  </div>
-</div> -->
-<!-- /// Modal inscrições ///-->
 
 <!-- ///////////////// MODAIS -->
 <? include "footer.php"; ?>

@@ -28,25 +28,22 @@
                       <table class="stripe" id="example-style-8">
                         <thead>
                           <tr>
-                            <th>Nome</th>
+                            <th>Temporada</th>
                             <th>TH</th>
-                            <th>Periodo Inscrição</th>
-                            <th>Início Classificatória</th>
+                            <th>Nome</th>
                             <th>Status</th>
                             <th>Ação</th>
                           </tr>
                         </thead>
                         <tbody>
                        <? $sql_torneio = "SELECT
-                       torneio.NOME,
+                       torneio.ID_TEMPORADA,
                        torneio.TH,
-                       DATE_FORMAT(torneio.INICIO_INSCRICAO, '%d/%m/%Y'),
-                       DATE_FORMAT(torneio.FINAL_INSCRICAO, '%d/%m/%Y'),
-                       DATE_FORMAT(torneio.INICIO_CLASSIFICATORIA, '%d/%m/%Y'),
+                       torneio.NOME,
                        status_torneio.DESCRICAO,
                        torneio.ID_TORNEIO
                         FROM torneio
-                        LEFT JOIN status_torneio ON status_torneio.ID_STATUS = torneio.ID_STATUS";
+                        INNER JOIN status_torneio ON status_torneio.ID_STATUS = torneio.ID_STATUS";
                         foreach ($db_heroes->query($sql_torneio) as $result_torneio){ 
                           ?>
 
@@ -55,17 +52,16 @@
                           <tr>
                             <td><? echo $result_torneio[0]?></td>
                             <td><? echo $result_torneio[1]?></td>
-                            <td><? echo $result_torneio[2].' - '.$result_torneio[3]?></td>
-                            <td><? echo $result_torneio[4]?></td>
-                            <td><? echo $result_torneio[5]?></td>
+                            <td><? echo $result_torneio[2]?></td>
+                            <td><? echo $result_torneio[3]?></td>
                             <td>
                               <!--EDITAR-->
-                              <button type="button" title="Editar" class="btn btn-sm btn-icon" onclick="location.href='torneio_forms.php?id_torneio=<? echo $result_torneio[6]; ?>';" >
+                              <button type="button" title="Editar" class="btn btn-sm btn-icon" onclick="location.href='torneio_forms.php?id_torneio=<? echo $result_torneio[4]; ?>';" >
                                 <span><i class="fa fa-pencil fa-2x" style="color:#7366ff"  aria-hidden="true"></i></span>
                               </button>
 
                               <!--INSCRIÇÕES-->
-                              <button type="button" data-toggle="modal" data-target=".torneio_inscricoes_<? echo $result_torneio[6]; ?>" title="Inscrições" class="btn btn-sm btn-icon" >
+                              <button type="button" data-toggle="modal" data-target=".torneio_inscricoes_<? echo $result_torneio[4]; ?>" title="Inscrições" class="btn btn-sm btn-icon" >
                                 <span><i class="fa fa-child fa-2x" style="color:#51bb25 "  aria-hidden="true"></i></span>
                               </button>
                             </td>
