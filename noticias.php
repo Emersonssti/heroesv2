@@ -51,7 +51,7 @@
 		
 			<!-- Logo - Image Based -->
 			<div class="header-logo header-logo--img">
-				<a href="index.html"><img src="assets/img/logo.png" srcset="assets/img/logo@2x.png 2x" alt="Necromancers"></a>
+				<a href="index.php"><img src="assets/img/logo.png" srcset="assets/img/logo@2x.png 2x" alt="Necromancers"></a>
 			</div>
 			<!-- Logo - Image Based / End -->
 		
@@ -131,7 +131,6 @@
 		 URL_IMG,
 		 DATA_POSTAGEM
 		 FROM noticia
-		 WHERE TIPO_NOTICIA = ''
 		 ORDER BY DATA_POSTAGEM DESC";
 		 foreach ($db_heroes->query($sql) as $result){ 
 

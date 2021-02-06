@@ -51,18 +51,18 @@
 		
 			<!-- Logo - Image Based -->
 			<div class="header-logo header-logo--img">
-				<a href="index.html"><img src="assets/img/logo.png" srcset="assets/img/logo@2x.png 2x" alt="Necromancers"></a>
+				<a href="index.php"><img src="assets/img/logo.png" srcset="assets/img/logo@2x.png 2x" alt="Necromancers"></a>
 			</div>
 			<!-- Logo - Image Based / End -->
 		
 		
 				<!-- Main Navigation -->
-				<nav class="main-nav">
+			<nav class="main-nav">
 				<ul class="main-nav__list">
 					<li><a href="index.php">Home</a></li>
 					<li><a href="noticias.php">Notícias</a></li>
 					<li><a href="#">Vídeos</a></li>
-					<li class="indisponivel"><a href="#">Blog</a></li>
+					<li><a href="#">Blog</a></li>
 		
 					<!-- <li class="">
 						<a href="#">Shop</a>
@@ -92,7 +92,6 @@
 		</header>
 		<!-- Header / End -->
 
-		
 		<!-- Site Heading
 		================================================== -->
 		<div class="page-header page-header--has-overlay">
@@ -125,17 +124,17 @@
 		 ORDER BY DATA LIMIT 16";
 		 foreach ($db_heroes->query($sql) as $result){ 
 		
-	  ?>
+?>
 <div class="col-lg-6" style="padding-top: 30px;">
 		
 
-<article class="post has-post-thumbnail ">
+	<article class="post has-post-thumbnail ">
 
-<iframe width="853" height="480" src="<?= $result[1];?>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<iframe width="853" height="480" src="<?= $result[1];?>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-</article>
+	</article>
 
-	</div>
+</div>
 		<?}?>		
 
 
@@ -147,11 +146,7 @@
 							</div>
 		
 						</div>
-					</div>
-		
-				</div>
-		
-			</div>
+					
 		</main>
 
 		<?php include "footer.php"; ?>
