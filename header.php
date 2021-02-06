@@ -60,7 +60,7 @@
 			<!-- Main Navigation -->
 			<nav class="main-nav">
 				<ul class="main-nav__list">
-					<li class="index.php"><a href="#">Home</a></li>
+					<li><a href="index.php">Home</a></li>
 					<li><a href="noticias.php">Notícias</a></li>
 					<li class="indisponivel"><a href="#">Vídeos</a></li>
 					<li class="indisponivel"><a href="#">Blog</a></li>

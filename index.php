@@ -52,6 +52,7 @@
 						<span class="link-subtitle">Discord</span>Heroes Tournaments
 					</a>
 				</li>
+
 			</ul>
 		</footer>
 		<!-- Footer / End -->
