@@ -3,8 +3,7 @@
 <? // Select da temporada
 $sql_temporada = $db_heroes->prepare("SELECT 
 	ID_TEMPORADA, 
-	NOME_TEMPORADA,
-	NUMERO_TEMPORADA
+	NOME_TEMPORADA
 FROM temporada 
 WHERE STATUS = 'ATIVO' ");
 $sql_temporada->execute();
@@ -18,8 +17,8 @@ $row_torneio = $sql_temporada->fetch(PDO::FETCH_NUM);
 					<div class="page-heading__subtitle h5">
 						<span class="color-primary">Próximos Torneios</span>
 					</div>
-					<h1 class="page-heading__title h2"><? echo $row_torneio[1];?></h1>
-					<input type="hidden" value="<? echo $row_torneio[0];?>">
+					<h1 class="page-heading__title h2"><?= $row_torneio[1];?></h1>
+					<input type="hidden" value="<?= $row_torneio[0];?>">
 				</div>
 				<div class="row mt-sm-auto mb-sm-auto">
 				<div class="col-sm-6 col-lg-1"></div>
@@ -32,7 +31,7 @@ $row_torneio = $sql_temporada->fetch(PDO::FETCH_NUM);
 						s.DESCRICAO
 						FROM torneio t
 							INNER JOIN status_torneio s ON s.ID_STATUS = t.ID_STATUS
-						WHERE t.ID_TEMPORADA = '".$row_torneio[0]."'";
+						WHERE t.ID_TEMPORADA = '".$row_torneio[0]."' ORDER BY t.TH";
                         foreach ($db_heroes->query($sql) as $result){ 
 
 							switch ($result[1]) {
@@ -50,6 +49,7 @@ $row_torneio = $sql_temporada->fetch(PDO::FETCH_NUM);
 									break;
 							}
 						  ?>
+						  
 						  
 						  <input type="hidden" id="id_torneio" value="<?= $result[0]?>">
 						  <div class="col-sm-6 col-lg-2">

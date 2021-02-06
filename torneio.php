@@ -30,8 +30,11 @@ $result = $sql->fetch(PDO::FETCH_NUM);
 				<div class="team-carousel">
 					<div class="team-carousel__content">
 
-
 <!--  Regras -->
+<? 
+//Se o status for em breve ou inscrições não deverá exibir o ranking
+if($result[8] == 1 || $result[8] == 4){ ?>
+
 <div class="team-carousel__item" data-icon="lineups">
 	<div class="row">
 		<div class="col-lg-6">
@@ -42,6 +45,7 @@ $result = $sql->fetch(PDO::FETCH_NUM);
 		</div>
 	</div>
 </div>
+<?}?>
 <!-- /// Regras /// -->
 
 
