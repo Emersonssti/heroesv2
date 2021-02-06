@@ -9,7 +9,7 @@
                   <h3>Notícias</h3>
                 </div>
                 <div class="col-lg-3" >
-                    <div class="bg-transparent" style="float:right;"><a class="btn btn-success btn-lg" href="noticias_forms.php"><span class="fa fa-plus"></span>Notícia</a></div>
+                    <div class="bg-transparent" style="float:right;"><a class="btn btn-success btn-lg" href="noticias_forms.php"><span class="fa fa-plus"></span> Notícia</a></div>
                 </div>
               </div>
             </div>
@@ -44,18 +44,18 @@
                         foreach ($db_heroes->query($sql_noticia) as $result_noticia){ 
                           ?>
                           
-                          <tr id="tr_noticia_<? echo $result_noticia[3]; ?>">
-                            <td><? echo $result_noticia[0]?></td>
-                            <td><? echo utf8_encode($result_noticia[1])?></td>
-                            <td><? echo utf8_encode($result_noticia[2])?></td>
+                          <tr id="tr_noticia_<?= $result_noticia[3]; ?>">
+                            <td><?= $result_noticia[0]?></td>
+                            <td><?= $result_noticia[1]?></td>
+                            <td><?= $result_noticia[2]?></td>
                             <td>
                               <!--EDITAR-->
-                              <button type="button" title="Editar" class="btn btn-sm btn-icon" onclick="location.href='noticias_forms.php?id_noticia=<? echo $result_noticia[3]; ?>';" >
+                              <button type="button" title="Editar" class="btn btn-sm btn-icon" onclick="location.href='noticias_forms.php?id_noticia=<?= $result_noticia[3]; ?>';" >
                                 <span><i class="fa fa-pencil fa-2x" style="color:#7366ff"  aria-hidden="true"></i></span>
                               </button>
 
                               <!--EXCLUIR-->
-                              <button type="button" title="Excluir" class="btn btn-sm btn-icon" id="btexclui_noticia<? echo $result_noticia[3]; ?>" onclick="Excluir_Noticia('<? echo $result_noticia[3]; ?>');" >
+                              <button type="button" title="Excluir" class="btn btn-sm btn-icon" id="btexclui_noticia<?= $result_noticia[3]; ?>" onclick="Excluir_Noticia('<?= $result_noticia[3]; ?>');" >
                                 <span><i class="fa fa-trash fa-2x" style="color:#7366ff"  aria-hidden="true"></i></span>
                               </button>
 
@@ -73,5 +73,23 @@
           <!-- Container-fluid Ends-->
         </div>
     
-
+<script>
+    $(document).ready(function() {
+    $('#example-style-8').DataTable({
+      destroy: true,
+      columnDefs: [{
+          'visible': true,
+          'targets': [0]
+        },
+        {
+          type: 'date-br',
+          'targets': [0]
+        }
+      ],
+      order: [
+        [0, 'desc']
+      ]
+    });
+  });
+</script>
     <? include "footer.php"; ?>

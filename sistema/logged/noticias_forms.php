@@ -48,7 +48,21 @@
                       </div>
                     </div>
 
-                    <div class="col-md-12">
+                    <div class="col-md-2">
+                      <div class="form-group">
+                          <label>Tema/Tag</label>
+                          <input class="form-control" id="tema" value="<? echo $tema;?>" type="text">
+                      </div>
+                    </div>
+
+                    <div class="col-md-2">
+                      <div class="form-group">
+                          <label>Tipo</label>
+                          <input class="form-control" id="tipo" value="<? echo $tipo;?>" type="text">
+                      </div>
+                    </div>
+
+                    <div class="col-md-8">
                       <div class="form-group">
                           <label>URL Imagem</label>
                           <input class="form-control" id="url_foto" value="<? echo $url_img;?>" type="text">
@@ -57,8 +71,15 @@
 
                     <div class="col-md-12">
                       <div class="form-group">
-                          <label> URL Notícia</label>
+                          <label>URL Notícia</label>
                           <input class="form-control" id="url_fonte"  value="<? echo $url_fonte;?>" type="text">
+                      </div>
+                    </div>
+
+                    <div class="col-md-12">
+                      <div class="form-group">
+                          <label>Resumo</label>
+                          <textarea class="form-control" rows="3" cols="3" id="resumo"><? echo $resumo; ?></textarea>
                       </div>
                     </div>
 
