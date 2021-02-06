@@ -13,42 +13,32 @@
 						<nav class="mobile-nav">
 							
 							<ul class="main-nav__list">
-							<li class=""><a href="#">Homezzz</a></li>
-							<li class=""><a href="#">Notícias</a></li>
-							<li class=""><a href="#">Vídeos</a></li>
-							<li class=""><a href="#">Blog</a></li>
-				
-							<!-- <li class="">
-								<a href="#">Shop</a>
-								<ul class="main-nav__sub">
-									<li class=""><a href="shop.html">Shop Page v1</a></li>
-									<li class=""><a href="shop-2.html">Shop Page v2</a></li>
-									<li class=""><a href="shop-product.html">Product Page</a></li>
-									<li class=""><a href="shop-checkout.html">Checkout Page</a></li>
-								</ul>
-							</li> -->
+							<li class=""><a href="index.php">Homezzz</a></li>
+							<li class=""><a href="noticias.php">Notícias</a></li>
+							<li class=""><a href="videos.php">Vídeos</a></li>
+							<li class=""><a href="blog.php">Blog</a></li>
 						</ul>
 						</nav>
 						<!-- Mobile Navigation / End -->
 					</div>
 				</li>
 				<li class="mobile-bar-item">
-					<a class="mobile-bar-item__header indisponivel" href="#">
+					<a class="mobile-bar-item__header" href="index.php">
 						Home
 					</a>
 				</li>
 				<li class="mobile-bar-item">
-					<a class="mobile-bar-item__header indisponivel" href="#">
+					<a class="mobile-bar-item__header" href="noticias.php">
 						Notícias
 					</a>
 				</li>
 				<li class="mobile-bar-item">
-					<a class="mobile-bar-item__header indisponivel" href="#">
+					<a class="mobile-bar-item__header" href="videos.php">
 						Vídeos
 					</a>
 				</li>
 				<li class="mobile-bar-item">
-					<a class="mobile-bar-item__header indisponivel" href="#">
+					<a class="mobile-bar-item__header" href="#">
 						Blog
 					</a>
 				</li>
@@ -60,9 +50,9 @@
 					<div id="dl-menu" class="dl-menuwrapper">
 						<!-- <button class="dl-trigger">Open Menu</button> -->
 						<ul class="dl-menu dl-menuopen">
-							<li class="index.php"><a href="#">Home</a></li>
-							<li class="noticias.php"><a href="#">Notícias</a></li>
-							<li class=""><a href="#">Vídeos</a></li>
+							<li><a href="index.php">Home</a></li>
+							<li><a href="noticias.php">Notícias</a></li>
+							<li><a href="videos.php">Vídeos</a></li>
 							<li class=""><a href="#">Blog</a>
 						</ul>
 					</div>

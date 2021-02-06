@@ -60,9 +60,9 @@
 				<nav class="main-nav">
 				<ul class="main-nav__list">
 					<li><a href="index.php">Home</a></li>
-					<li class="indisponivel"><a href="#">Notícias</a></li>
-					<li class="indisponivel"><a href="#">Vídeos</a></li>
-					<li class="indisponivel"><a href="#">Blog</a></li>
+					<li><a href="#">Notícias</a></li>
+					<li><a href="videos.php">Vídeos</a></li>
+					<li><a href="#">Blog</a></li>
 		
 					<!-- <li class="">
 						<a href="#">Shop</a>

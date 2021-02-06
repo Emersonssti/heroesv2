@@ -60,8 +60,8 @@
 				<nav class="main-nav">
 				<ul class="main-nav__list">
 					<li><a href="index.php">Home</a></li>
-					<li class="indisponivel"><a href="#">Notícias</a></li>
-					<li class="indisponivel"><a href="#">Vídeos</a></li>
+					<li><a href="noticias.php">Notícias</a></li>
+					<li><a href="#">Vídeos</a></li>
 					<li class="indisponivel"><a href="#">Blog</a></li>
 		
 					<!-- <li class="">
@@ -124,7 +124,6 @@
 		 WHERE ID_ASSISTA
 		 ORDER BY DATA LIMIT 16";
 		 foreach ($db_heroes->query($sql) as $result){ 
-
 		
 	  ?>
 <div class="col-lg-6" style="padding-top: 30px;">
@@ -136,10 +135,8 @@
 
 </article>
 
-	
-							</div>
-		<br>
-							<?}?>		
+	</div>
+		<?}?>		
 
 
 									</div>
