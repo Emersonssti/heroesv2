@@ -33,7 +33,7 @@ $result = $sql->fetch(PDO::FETCH_NUM);
 <!--  Regras -->
 <? 
 //Se o status for em breve ou inscrições não deverá exibir o ranking
-if($result[8] == 1 || $result[8] == 4){ ?>
+if($result[8] != 1 || $result[8] != 4){ ?>
 
 <div class="team-carousel__item" data-icon="lineups">
 	<div class="row">

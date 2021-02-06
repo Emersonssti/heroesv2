@@ -60,8 +60,8 @@
 					<div id="dl-menu" class="dl-menuwrapper">
 						<!-- <button class="dl-trigger">Open Menu</button> -->
 						<ul class="dl-menu dl-menuopen">
-							<li class=""><a href="#">Home</a></li>
-							<li class=""><a href="#">Notícias</a></li>
+							<li class="index.php"><a href="#">Home</a></li>
+							<li class="noticias.php"><a href="#">Notícias</a></li>
 							<li class=""><a href="#">Vídeos</a></li>
 							<li class=""><a href="#">Blog</a>
 						</ul>

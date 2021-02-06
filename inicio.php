@@ -54,7 +54,8 @@ $row_torneio = $sql_temporada->fetch(PDO::FETCH_NUM);
 						  <input type="hidden" id="id_torneio" value="<?= $result[0]?>">
 						  <div class="col-sm-6 col-lg-2">
 							<div class="team-selection-item team-selection-item--style-1 text-center">
-								<a href="torneio.php?torneio=<? echo $result[0];?>" class="team-selection-item__thumbnail">
+								<!-- <a href="torneio.php?torneio=<?// echo $result[0];?>" class="team-selection-item__thumbnail"> -->
+								<a class="team-selection-item__thumbnail indisponivel">
 									<div class="team-selection-item__thumbnail-inner">
 										<img src="assets/img/<? echo $result[3];?>" alt="">
 									</div>
