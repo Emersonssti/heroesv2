@@ -28,7 +28,7 @@ $("#gravar_torneio").click(function(){
  
    
 
-    $.ajax({ url:'torneio_grava.php?nome=' + NOME + '&th=' + TH + '&id_temporada=' + ID_TEMPORADA+ '&id_torneio=' + ID_TORNEIO + '&id_regras=' + ID_REGRAS+ '&id_premiacao=' + ID_PREMIACAO+ '&id_agenda=' + ID_AGENDA + '&link_bracket=' + LINK_BRACKET + '&id_status=' + ID_STATUS, cache: false }).done(function (txtstatus) {
+    $.ajax({ url:'torneio_grava.php?nome=' + NOME + '&th=' + TH + '&id_temporada=' + ID_TEMPORADA+ '&id_torneio=' + ID_TORNEIO + '&id_regras=' + ID_REGRAS+ '&id_premiacao=' + ID_PREMIACAO+ '&id_agenda=' + ID_AGENDA + '&link_bracket=' + LINK_BRACKET + '&id_status=' + ID_STATUS+'&insert=1', cache: false }).done(function (txtstatus) {
  
     console.log(txtstatus);
      
@@ -253,3 +253,63 @@ $("#gravar_comunidade").click(function(){
         }
     });
 }
+
+//Grava agenda
+function GravaAgenda(id,coluna) {
+
+if(coluna == 'DESCRICAO1'){
+    var dado = $("#desc1_" + id).val();
+}else if (coluna == 'DESCRICAO2') {
+    var dado = $("#desc2_" + id).val();
+    
+}
+    $.ajax({ url:'torneio_grava.php?id=' + id + '&coluna=' + coluna + '&dado=' + dado + '&insert=2', cache: false }).done(function (txtstatus) {
+        
+        if(txtstatus == 0){
+            swal("Erro inserir o registro!", '', 'error');
+        }
+        
+    
+     })
+
+}
+
+//Grava premiação
+function GravaPremiacao(id,coluna) {
+
+    if(coluna == 'DESCRICAO1'){
+        var dado = $("#desc1p_" + id).val();
+    }else if (coluna == 'DESCRICAO2') {
+        var dado = $("#desc2p_" + id).val(); 
+    }
+        $.ajax({ url:'torneio_grava.php?id=' + id + '&coluna=' + coluna + '&dado=' + dado + '&insert=3', cache: false }).done(function (txtstatus) {
+            
+            if(txtstatus == 0){
+                swal("Erro inserir o registro!", '', 'error');
+            }
+            
+        
+         })
+    
+    }
+
+//Grava regra
+function GravaRegra(id,coluna) {
+
+    if(coluna == 'SUBTITULO'){
+        var dado = $("#sub_" + id).val();
+    }else if (coluna == 'TEXTO') {
+        var dado = $("#tex_" + id).val(); 
+    }
+        $.ajax({ url:'torneio_grava.php?id=' + id + '&coluna=' + coluna + '&dado=' + dado + '&insert=4', cache: false }).done(function (txtstatus) {
+            
+            console.log(txtstatus);
+            if(txtstatus == 0){
+                swal("Erro inserir o registro!", '', 'error');
+            }
+            
+        
+         })
+    
+    }
+
