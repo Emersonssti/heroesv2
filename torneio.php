@@ -142,8 +142,7 @@ if($result[8] != 1 || $result[8] != 4){ ?>
 	<div class="col-lg-6">
 		<h2 class="player-info-title text-uppercase">Bracket</h2>
 			
-		<a href="<?= $result[7];?>" class="btn btn-secondary">Bracket</a>
-		<a data-toggle="modal" data-target="#regras" class="btn btn-secondary">Ranking</a>
+		<a href="#<?//= $result[7];?>" class="btn btn-secondary indisponivel">Bracket Online</a>
 
 	</div>
 	</div>
