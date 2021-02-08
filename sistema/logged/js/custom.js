@@ -97,39 +97,39 @@ $("#gravar_noticia").click(function(){
  });  
 
  
-///////////////// Grava Classificatoria
-$("#gravar_classificatoria").click(function(){
+// ///////////////// Grava Classificatoria
+// $("#gravar_classificatoria").click(function(){
 
-    var ID_CLASSIFICATORIA = $('#id_classificatoria').val();
-    var NOME = $('#classificatoria_nome').val();
-    var TORNEIO = $('#classificatoria_torneio').val();
-    var DATA = $('#classificatoria_data').val();
-    var ID_STATUS = $('#classificatoria_status').val();
+//     var ID_CLASSIFICATORIA = $('#id_classificatoria').val();
+//     var NOME = $('#classificatoria_nome').val();
+//     var TORNEIO = $('#classificatoria_torneio').val();
+//     var DATA = $('#classificatoria_data').val();
+//     var ID_STATUS = $('#classificatoria_status').val();
 
-    $.ajax({ url:'classificatoria_grava.php?id_classificatoria=' + ID_CLASSIFICATORIA + '&nome=' + NOME + '&torneio=' + TORNEIO + '&data=' + DATA+ '&id_status=' + ID_STATUS, cache: false }).done(function (txtstatus) {
+//     $.ajax({ url:'classificatoria_grava.php?id_classificatoria=' + ID_CLASSIFICATORIA + '&nome=' + NOME + '&torneio=' + TORNEIO + '&data=' + DATA+ '&id_status=' + ID_STATUS, cache: false }).done(function (txtstatus) {
      
-       if(txtstatus == 0){
-        swal("Não foi possível salvar os dados, contate o suporte", '', 'error');
+//        if(txtstatus == 0){
+//         swal("Não foi possível salvar os dados, contate o suporte", '', 'error');
 
-       }else if( txtstatus == 1){
+//        }else if( txtstatus == 1){
 
-        swal("Registro gravado com sucesso!");
-        var delay=2000; //1 seconds
-        setTimeout(function(){
-            location.replace("../logged/classificatoria_list.php");
-        },delay);
+//         swal("Registro gravado com sucesso!");
+//         var delay=2000; //1 seconds
+//         setTimeout(function(){
+//             location.replace("../logged/classificatoria_list.php");
+//         },delay);
 
-       }else if( txtstatus == 2){
-        swal("Registro alterado com sucesso!");
-        var delay=2000; //1 seconds
-        setTimeout(function(){
-            location.replace("../logged/classificatoria_list.php");
-        },delay);
-       }
+//        }else if( txtstatus == 2){
+//         swal("Registro alterado com sucesso!");
+//         var delay=2000; //1 seconds
+//         setTimeout(function(){
+//             location.replace("../logged/classificatoria_list.php");
+//         },delay);
+//        }
        
    
-    })
- });  
+//     })
+//  });  
 
 
 

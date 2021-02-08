@@ -47,7 +47,7 @@ $ID_STATUS = $_GET["id_status"];
         }
     
     }else{
-       $update_torneio = $db_heroes->query("UPDATE torneio SET NOME = ('".$NOME."'), TH = ('".$TH."'), ID_TEMPORADA = ('".$ID_TEMPORADA."'),  ID_REGRAS = ('".$ID_REGRAS."'), ID_PREMIACAO = ('".$ID_PREMIACAO."'), ID_AGENDA = ('".$ID_AGENDA."'), LINK_BRACKET = ('".$LINK_BRACKET."'), ID_STATUS = ('".$ID_STATUS."'), IMG_TH = ('".$IMG_TH."')  WHERE ID_TORNEIO = ('".$ID_TORNEIO."')");
+       $update_torneio = $db_heroes->query("UPDATE torneio SET NOME = ('".$NOME."'), TH = ('".$TH."'), ID_TEMPORADA = ('".$ID_TEMPORADA."'),  ID_REGRAS = ('".$ID_REGRAS."'), ID_PREMIACAO = ('".$ID_PREMIACAO."'), ID_AGENDA = ('".$ID_AGENDA."'), ID_BRACKET = ('".$LINK_BRACKET."'), ID_STATUS = ('".$ID_STATUS."'), IMG_TH = ('".$IMG_TH."')  WHERE ID_TORNEIO = ('".$ID_TORNEIO."')");
     
         if(!$update_torneio){
             echo 0;

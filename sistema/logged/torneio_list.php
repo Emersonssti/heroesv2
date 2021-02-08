@@ -28,11 +28,11 @@
                       <table class="stripe" id="example-style-8">
                         <thead>
                           <tr>
-                            <th>Temporada</th>
-                            <th>TH</th>
-                            <th>Nome</th>
-                            <th>Status</th>
-                            <th>Ação</th>
+                            <th width="4%">Season</th>
+                            <th width="4%">TH</th>
+                            <th width="45%">Nome</th>
+                            <th width="15%">Status</th>
+                            <th width="32%">Ação</th>
                           </tr>
                         </thead>
                         <tbody>
@@ -78,12 +78,12 @@
 
                               <!--PREMIAÇÃO-->
                               <button type="button" data-toggle="modal" data-target=".premiacao_<? echo $result_torneio[6]; ?>" title="Premiação" class="btn btn-sm btn-icon" >
-                                <span><i class="fa fa-dollar fa-2x" style="color:#3f901d"  aria-hidden="true"></i></span>
+                                <span><i class="fa fa-dollar fa-2x" style="color:#f8d62b"  aria-hidden="true"></i></span>
                               </button>
 
                               <!--REGRAS-->
                               <button type="button" data-toggle="modal" data-target=".regras_<? echo $result_torneio[6]; ?>" title="Regras" class="btn btn-sm btn-icon" >
-                                <span><i class="fa fa-dollar fa-2x" style="color:#3f901d"  aria-hidden="true"></i></span>
+                                <span><i class="fa fa-file-text fa-2x" style="color:#3f901d"  aria-hidden="true"></i></span>
                               </button>
 
                             </td>
