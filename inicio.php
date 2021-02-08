@@ -34,34 +34,34 @@ $row_torneio = $sql_temporada->fetch(PDO::FETCH_NUM);
 						WHERE t.ID_TEMPORADA = '".$row_torneio[0]."' ORDER BY t.TH";
                         foreach ($db_heroes->query($sql) as $result){ 
 
-							switch ($result[1]) {
-								case 1:
-									$cor_status = 'yellow';
-									break;
-								case 2:
-									$cor_status = 'green';
-									break;
-								case 3:
-									$cor_status = 'red';
-									break;
-								case 4:
-									$cor_status = 'blue';
-									break;
-							}
+							// switch ($result[1]) {
+							// 	case 1:
+							// 		$cor_status = 'yellow';
+							// 		break;
+							// 	case 2:
+							// 		$cor_status = 'green';
+							// 		break;
+							// 	case 3:
+							// 		$cor_status = 'red';
+							// 		break;
+							// 	case 4:
+							// 		$cor_status = 'blue';
+							// 		break;
+							// }
 						  ?>
 						  
 						  
 						  <input type="hidden" id="id_torneio" value="<?= $result[0]?>">
 						  <div class="col-sm-6 col-lg-2">
 							<div class="team-selection-item team-selection-item--style-1 text-center">
-								<!-- <a href="torneio.php?torneio=<?// echo $result[0];?>" class="team-selection-item__thumbnail"> -->
-								<a class="team-selection-item__thumbnail indisponivel">
+								<a href="torneio.php?torneio=<? echo $result[0];?>" class="team-selection-item__thumbnail">
+								<!-- <a class="team-selection-item__thumbnail indisponivel"> -->
 									<div class="team-selection-item__thumbnail-inner">
 										<img src="assets/img/<? echo $result[3];?>" alt="">
 									</div>
 									<img class="team-selection-item__logo team-selection-item__logo--middle" src="assets/img/<? echo $result[3];?>" srcset="assets/img/<? echo $result[3];?> 2x" alt="">
 								</a>
-								<span class="team-selection-item__subtitle h6" style="color: <? echo $cor_status?>;"><? echo $result[4];?></span>
+								<span class="team-selection-item__subtitle h6" style="color: yellow;"><? echo $result[4];?></span>
 								<h2 class="team-selection-item__title">TH<? echo $result[2]?></h2>
 							</div>
 						</div>
