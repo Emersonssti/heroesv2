@@ -23,7 +23,7 @@ $Mailer->From='contato@torneioheroes.com';
 $Mailer->FromName = 'Torneio Heroes';
 $Mailer->Subject='Inscrição Torneio Heroes';
 
-$Mailer->Body='<img src="https://s2.glbimg.com/6Kih1YiwCcxIfpF4Fb-PKJAvkvs=/512x320/smart/e.glbimg.com/og/ed/f/original/2020/01/28/gettyimages-980825530.jpg" alt="">
+$Mailer->Body='<img src="http://torneioheroes.com/assets/img/welcome_t5.jpeg" alt="">
 ';
 
 //Destinatário
