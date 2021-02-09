@@ -19,11 +19,6 @@
 		</header>
 		<!-- Header / End -->
 
-		<!-- Contador-->
-		<div style="display:none;">
-
-		<a href="https://www.webcontadores.com" title="contador"><img src="https://counter8.stat.ovh/private/webcontadores.php?c=pqp4t7buazapzw884ana1h3scbjnl4sl" border="0" title="contador" alt="contador"></a>
-		</div>
 		<main class="site-content text-center" id="wrapper">
 			
 			<div class="site-content__center">

@@ -35,11 +35,8 @@
 	<link href="assets/vendor/fontawesome/css/brands.css" rel="stylesheet">
 
 
-	<!--Contador-->
-	<div id="sfcpqp4t7buazapzw884ana1h3scbjnl4sl"></div>
-	<script type="text/javascript" src="https://counter8.stat.ovh/private/counter.js?c=pqp4t7buazapzw884ana1h3scbjnl4sl&down=async" async></script>
-	<br><a href="https://www.webcontadores.com">contador</a><noscript><a href="https://www.webcontadores.com" title="contador"><img src="https://counter8.stat.ovh/private/webcontadores.php?c=pqp4t7buazapzw884ana1h3scbjnl4sl" border="0" title="contador" alt="contador"></a></noscript>
-<!-- Template CSS-->
+
+	<!-- Template CSS-->
 	<link href="assets/css/style.css" rel="stylesheet">
 
 	<!-- Custom CSS-->
