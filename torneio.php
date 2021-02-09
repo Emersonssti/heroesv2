@@ -35,7 +35,7 @@ $result = $sql->fetch(PDO::FETCH_NUM);
 //Se o status for em breve ou inscrições não deverá exibir o ranking
 if($result[8] != 1 || $result[8] != 4){ ?>
 
-<div class="team-carousel__item" data-icon="lineups">
+<div class="team-carousel__item" data-icon="achievements">
 	<div class="row">
 		<div class="col-lg-6">
 			<h2 class="player-info-title h1">Ranking</h2>
@@ -51,7 +51,7 @@ if($result[8] != 1 || $result[8] != 4){ ?>
 
 
 <!--  Regras -->
-<div class="team-carousel__item" data-icon="lineups">
+<div class="team-carousel__item" data-icon="joystick">
 	<div class="row">
 		<div class="col-lg-6">
 			<h2 class="player-info-title h1">Regras</h2>
@@ -65,7 +65,7 @@ if($result[8] != 1 || $result[8] != 4){ ?>
 
 	
 <!-- Premiação -->
-<div class="team-carousel__item" data-icon="achievements">
+<div class="team-carousel__item" data-icon="medal" >
 	<div class="row">
 		<div class="col-lg-6">
 			<h2 class="player-info-title text-uppercase">Prêmios</h2>
@@ -87,7 +87,7 @@ if($result[8] != 1 || $result[8] != 4){ ?>
 		
 
 <!-- Agenda -->
-<div class="team-carousel__item" data-icon="stats">
+<div class="team-carousel__item" data-icon="stopwatch">
 	<div class="row">
 		<div class="col-lg-6">
 			<h2 class="player-info-title text-uppercase">Agenda</h2>
@@ -110,7 +110,7 @@ if($result[8] != 1 || $result[8] != 4){ ?>
 
 
 <!-- Participantes -->
-<div class="team-carousel__item" data-icon="team-overview">
+<div class="team-carousel__item" data-icon="deaths">
 		<div class="row">
 				<div class="col-lg-6">
 					<h2 class="player-info-title h1">Participantes</h2>
@@ -137,7 +137,7 @@ if($result[8] != 1 || $result[8] != 4){ ?>
 
 
 <!-- Braket -->
-<div class="team-carousel__item" data-icon="replay">
+<div class="team-carousel__item" data-icon="overview">
 	<div class="row">
 	<div class="col-lg-6">
 		<h2 class="player-info-title text-uppercase">Bracket</h2>

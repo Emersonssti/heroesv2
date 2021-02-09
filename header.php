@@ -9,7 +9,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="description" content="Heroes Tournaments">
-	<meta name="author" content="Dan Fisher">
+	<meta name="author" content="Emerson Santos">
 	<meta name="keywords" content="esports team news HTML template">
 
 	<!-- Favicons
