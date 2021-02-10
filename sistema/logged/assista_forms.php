@@ -34,12 +34,14 @@
                       </div>
                   </div>
 
-                    <div class="col-md-3">
+                  <div class="col-md-3">
                       <div class="form-group">
-                          <label>Canal</label>
-                          <input class="form-control" id="canal" value="<? echo $canal;?>" type="text">
+                        <label>Canal</label>
+                        <select class="form-control " id="canal">
+                        <? include "combo/canal.php"; ?>
+                        </select>
                       </div>
-                    </div>
+                  </div>
 
                     <div class="col-md-12">
                       <div class="form-group">

@@ -9,7 +9,7 @@
                   <h3>Notícias</h3>
                 </div>
                 <div class="col-lg-3" >
-                    <div class="bg-transparent" style="float:right;"><a class="btn btn-success btn-lg" href="assista_forms.php"><span class="fa fa-plus"></span>Notícia</a></div>
+                    <div class="bg-transparent" style="float:right;"><a class="btn btn-success btn-lg" href="assista_forms.php"><span class="fa fa-plus"> </span> Vídeo</a></div>
                 </div>
               </div>
             </div>
@@ -28,24 +28,28 @@
                       <table class="stripe" id="example-style-8">
                         <thead>
                           <tr>
+                            <th width="20%">Data</th>
+                            <th width="25%">Canal</th>
                             <th width="40%">Título</th>
-                            <th width="25%">CANAL</th>
-                            <th width="25%">Ação</th>
+                            <th width="15%">Ação</th>
                           </tr>
                         </thead>
                         <tbody>
 
                        <? $sql_assista = "SELECT
-                        assista.ID_ASSISTA,
-                        assista.TITULO,
-                        assista.CANAL
-                        FROM assista";
+                        a.ID_ASSISTA,
+                        a.TITULO,
+                        s.NOME_CANAL,
+                        DATE_FORMAT(a.DATA,'%d/%m/%Y')
+                        FROM assista a
+                        LEFT JOIN streamer s ON s.ID_STREAMER = a.ID_STREAMER ORDER BY a.ID_ASSISTA" ;
                         foreach ($db_heroes->query($sql_assista) as $result_assista){ 
                           ?>
                           
                           <tr id="tr_assista_<? echo $result_assista[0]; ?>">
-                            <td><? echo utf8_encode($result_assista[1]);?></td>
+                            <td><?= $result_assista[3]?></td>
                             <td><? echo utf8_encode($result_assista[2]);?></td>
+                            <td><? echo utf8_encode($result_assista[1]);?></td>
                             <td>
                               <!--EDITAR-->
                               <button type="button" title="Editar" class="btn btn-sm btn-icon" onclick="location.href='assista_forms.php?id_assista=<? echo $result_assista[0]; ?>';" >

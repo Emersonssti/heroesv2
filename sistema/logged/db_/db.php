@@ -1,4 +1,4 @@
-<?
+<? ini_set('error_reporting', 0);
 session_start();
 header('Content-Type: text/html; charset=UTF-8');
  if($_SESSION['id_user'] == ""){ ?>

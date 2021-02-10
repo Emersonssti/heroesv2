@@ -6,7 +6,7 @@ $id_assista = $_GET["id_assista"];
 $url = $_GET["url"];
 
 if($id_assista == ""){
-    $insert_noticia = $db_heroes->query("INSERT INTO assista (TITULO, CANAL, LINK, USER) VALUES ('" .$titulo. "','" .$canal. "','" .$url. "','" .$id_user. "')");
+    $insert_noticia = $db_heroes->query("INSERT INTO assista (TITULO, ID_STREAMER, LINK, USER) VALUES ('" .$titulo. "','" .$canal. "','" .$url. "','" .$id_user. "')");
 
     if(!$insert_noticia){
         echo 0;
@@ -16,7 +16,7 @@ if($id_assista == ""){
     }
 
 }else{
-   $update_noticia = $db_heroes->query("UPDATE assista SET TITULO = ('".$titulo."'), CANAL = ('".$canal."'), LINK = ('".$url."'), USER = ('".$id_user."')  WHERE ID_ASSISTA = ('".$id_assista."')");
+   $update_noticia = $db_heroes->query("UPDATE assista SET TITULO = ('".$titulo."'), ID_STREAMER = ('".$canal."'), LINK = ('".$url."'), USER = ('".$id_user."')  WHERE ID_ASSISTA = ('".$id_assista."')");
 
     if(!$update_noticia){
         echo 0;
