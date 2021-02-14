@@ -1,4 +1,9 @@
-<?php include "header.php"; ?>
+<?php include "header.php"; 
+
+require './vendor/autoload.php';
+use League\CommonMark\CommonMarkConverter; //utilizando o conversor padrão do CommonMark
+$converter = new CommonMarkConverter(); //instanciando um novo conversor
+?>
 <style>
 th{color:black;}
 
@@ -201,9 +206,14 @@ if($result[8] != 1 && $result[8] != 4){ ?>
 		 FROM regras_detalhe
 		 WHERE ID_REGRA = '".$result[3]."'";
 		 foreach ($db_heroes->query($sql_) as $result_){ 
+
+			$paragrafo = str_replace("@", "<br>", $result_[1]);#parágrafo
+			// $paragrafo_ = str_replace("/n", "<b>", $paragrafo__);#abre negrito
+			// $paragrafo = str_replace("\n", "<b>", $paragrafo__);#fecha negrito
+
 	  ?>
 		<h6><?= $result_[0]; ?></h6>
-		<p><?= $result_[1];?></p>
+		<p><?=  $converter->convertToHtml($paragrafo);?></p>
 
 		<?}?>
       </div>
