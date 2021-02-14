@@ -62,7 +62,7 @@
 					<li><a href="index.php">Home</a></li>
 					<li><a href="#">Notícias</a></li>
 					<li><a href="videos.php">Vídeos</a></li>
-					<li><a href="#">Blog</a></li>
+					<li><a href="comunidade.php">Comunidade</a></li>
 		
 					<!-- <li class="">
 						<a href="#">Shop</a>

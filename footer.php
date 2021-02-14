@@ -13,10 +13,10 @@
 						<nav class="mobile-nav">
 							
 							<ul class="main-nav__list">
-							<li class=""><a href="index.php">Homezzz</a></li>
+							<li class=""><a href="index.php">Home</a></li>
 							<li class=""><a href="noticias.php">Notícias</a></li>
 							<li class=""><a href="videos.php">Vídeos</a></li>
-							<li class=""><a href="blog.php">Blog</a></li>
+							<li class=""><a href="comunidade.php">Comunidade</a></li>
 						</ul>
 						</nav>
 						<!-- Mobile Navigation / End -->
@@ -38,8 +38,8 @@
 					</a>
 				</li>
 				<li class="mobile-bar-item">
-					<a class="mobile-bar-item__header" href="#">
-						Blog
+					<a class="mobile-bar-item__header" href="comunidade.php">
+						Comunidade
 					</a>
 				</li>
 			</ul>
@@ -53,7 +53,7 @@
 							<li><a href="index.php">Home</a></li>
 							<li><a href="noticias.php">Notícias</a></li>
 							<li><a href="videos.php">Vídeos</a></li>
-							<li class=""><a href="#">Blog</a>
+							<li><a href="comunidade.php">Blog</a>
 						</ul>
 					</div>
 				</div>

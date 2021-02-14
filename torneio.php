@@ -280,7 +280,7 @@ if($result[8] != 1 && $result[8] != 4){ ?>
 								ESTRELA,
 								PORCENTAGEM
 							FROM ranking
-							WHERE ID_TORNEIO = '".$id_torneio."' ORDER BY VITORIA, ESTRELA, PORCENTAGEM";
+							WHERE ID_TORNEIO = '".$id_torneio."' ORDER BY VITORIA DESC, ESTRELA DESC, PORCENTAGEM DESC";
 							foreach ($db_heroes->query($sql_ranking) as $result_ranking){ 
 						?>
 

@@ -63,7 +63,7 @@
       <div class="page-main-header">
         <div class="main-header-right row m-0">
           <div class="main-header-left">
-            <div class="logo-wrapper"><a href="index.html"><img class="img-fluid" src="../assets/images/logo/logo.png" alt=""></a></div>
+            <div class="logo-wrapper"><a href="index.php"><img class="img-fluid" src="../assets/images/logo/.png" alt=""></a></div>
           </div>
           <div class="toggle-sidebar"><i class="status_toggle middle" data-feather="grid" id="sidebar-toggle"></i></div>
        
@@ -95,8 +95,8 @@
       <div class="page-body-wrapper sidebar-icon">
         <!-- Page Sidebar Start-->
         <header class="main-nav">
-          <div class="logo-wrapper"><a href="index.html"><img class="img-fluid" src="../assets/images/logo/logo.png" alt=""></a></div>
-          <div class="logo-icon-wrapper"><a href="index.html"><img class="img-fluid" src="../assets/images/logo/logo-icon.png" style="height: 100px; width:100px" alt=""></a></div>
+        <div class="logo-wrapper"><a href="index.html"><h4>HEROES ADMIN</h4></a></div>
+          <div class="logo-icon-wrapper"><a href="index.html"><h5>ADMIN</h5></a></div>
           <nav>
             <div class="main-navbar">
               <div class="left-arrow" id="left-arrow"><i data-feather="arrow-left"></i></div>
@@ -123,5 +123,8 @@
             </div>
           </nav>
         </header>
-        <style>input{ text-transform: uppercase;}</style>
+        <style>
+        input{ text-transform: uppercase;}
+        .centraliza{text-align: center;}
+        </style>
 

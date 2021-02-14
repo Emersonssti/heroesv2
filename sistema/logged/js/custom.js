@@ -313,3 +313,25 @@ function GravaRegra(id,coluna) {
     
     }
 
+    //Grava premiação
+function GravaRanking(id,coluna) {
+
+    if(coluna == 'VITORIA'){
+        var dado = $("#vitoria_" + id).val();
+    }else if (coluna == 'ESTRELA') {
+        var dado = $("#estrela_" + id).val(); 
+    }else if (coluna == 'PORCENTAGEM') {
+        var dado = $("#porcentagem_" + id).val(); 
+    }
+
+        $.ajax({ url:'torneio_grava.php?id=' + id + '&coluna=' + coluna + '&dado=' + dado + '&insert=5', cache: false }).done(function (txtstatus) {
+            
+            if(txtstatus == 0){
+                swal("Erro inserir o registro!", '', 'error');
+            }
+            
+        
+         })
+    
+    }
+

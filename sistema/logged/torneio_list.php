@@ -30,9 +30,9 @@
                           <tr>
                             <th width="4%">Season</th>
                             <th width="4%">TH</th>
-                            <th width="45%">Nome</th>
+                            <th width="40%">Nome</th>
                             <th width="15%">Status</th>
-                            <th width="32%">Ação</th>
+                            <th width="37%">Ação</th>
                           </tr>
                         </thead>
                         <tbody>
@@ -54,6 +54,7 @@
                           <? include "torneio_agenda.php"?>
                           <? include "torneio_premiacao.php"?>
                           <? include "torneio_regras.php"?>
+                          <? include "torneio_ranking.php"?>
                           
                           <tr>
                             <td><? echo $result_torneio[0]?></td>
@@ -84,6 +85,11 @@
                               <!--REGRAS-->
                               <button type="button" data-toggle="modal" data-target=".regras_<? echo $result_torneio[6]; ?>" title="Regras" class="btn btn-sm btn-icon" >
                                 <span><i class="fa fa-file-text fa-2x" style="color:#3f901d"  aria-hidden="true"></i></span>
+                              </button>
+
+                              <!--RANKING-->
+                              <button type="button" data-toggle="modal" data-target=".ranking_<? echo $result_torneio[4]; ?>" title="Ranking" class="btn btn-sm btn-icon" >
+                                <span><i class="fa fa-group fa-2x" style="color:#dbdbdb"  aria-hidden="true"></i></span>
                               </button>
 
                             </td>

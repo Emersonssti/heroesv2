@@ -98,14 +98,28 @@ if(!$update){
         }
          
         $update = $db_heroes->query("UPDATE regras_detalhe SET ".$coluna." = ('".$dado."') WHERE ID_REGRA_DETALHE = ('".$id."')");
-        echo "UPDATE regras_detalhe SET ".$coluna." = ('".$dado."') WHERE ID_REGRA_DETALHE = ('".$id."')";
         if(!$update){
             echo 0;
         }else{
             echo 1;
         }
         
+}elseif ($INSERT == 5) {
+
+    $id = $_GET["id"];
+    $coluna = $_GET["coluna"];
+    $dado = $_GET["dado"];
+ 
+     
+    $update = $db_heroes->query("UPDATE ranking SET ".$coluna." = ('".$dado."') WHERE ID_RANKING = ('".$id."')");
+    if(!$update){
+        echo 0;
+    }else{
+        echo 1;
+    }
+    
 }
+
     
 
 
