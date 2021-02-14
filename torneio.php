@@ -272,6 +272,7 @@ if($result[8] != 1 && $result[8] != 4){ ?>
 						<tbody>
 
 						<?
+							$cont = 1;
 							$sql_ranking = "SELECT
 								NOME_VILA,
 								NOME_JOGADOR,
@@ -284,7 +285,7 @@ if($result[8] != 1 && $result[8] != 4){ ?>
 						?>
 
 							<tr>
-								<td>1</td>
+								<td><?=$cont?></td>
 							<td class="standings-table__team">
 									<figure class="match-team" role="group">
 										
@@ -299,7 +300,7 @@ if($result[8] != 1 && $result[8] != 4){ ?>
 								<td class="standings-table__losses"><?=  $result_ranking[4];?>%</td>
 							</tr>
 
-							<?}?>
+							<? $cont++; }?>
 						</tbody>
 					</table>
 				</div>
