@@ -83,7 +83,7 @@
                               </button>
 
                               <!--REGRAS-->
-                              <button type="button" data-toggle="modal" data-target=".regras_<? echo $result_torneio[6]; ?>" title="Regras" class="btn btn-sm btn-icon" >
+                              <button type="button" data-toggle="modal" data-target=".regras_<? echo $result_torneio[7]; ?>" title="Regras" class="btn btn-sm btn-icon" >
                                 <span><i class="fa fa-file-text fa-2x" style="color:#3f901d"  aria-hidden="true"></i></span>
                               </button>
 
