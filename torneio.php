@@ -31,8 +31,10 @@ $result = $sql->fetch(PDO::FETCH_NUM);
 	<!-- Content
 		================================================== -->
 		<main class="site-content player-info-page" id="wrapper">
+
 			<div class="container container--large">
 				<div class="team-carousel">
+<br>
 					<div class="team-carousel__content">
 
 <!--  Regras -->
@@ -70,7 +72,7 @@ if($result[8] != 1 && $result[8] != 4){ ?>
 
 	
 <!-- Premiação -->
-<div class="team-carousel__item" data-icon="medal" >
+<div class="team-carousel__item" data-icon="medal">
 	<div class="row">
 		<div class="col-lg-6">
 			<h2 class="player-info-title text-uppercase">Prêmios</h2>
@@ -144,6 +146,10 @@ if($result[8] != 1 && $result[8] != 4){ ?>
 <!-- /// Inscrições /// -->
 
 <?}?>
+
+<? 
+//Se o status for em breve ou inscrições não deverá exibir o Bracket
+if($result[8] != 1 && $result[8] != 4){ ?>
 <!-- Braket -->
 <div class="team-carousel__item" data-icon="overview">
 	<div class="row">
@@ -156,7 +162,7 @@ if($result[8] != 1 && $result[8] != 4){ ?>
 	</div>
 </div>
 <!-- /// Bracket /// -->
-		
+<?}?>		
 					</div>
 				</div>
 				<div class="team-player">

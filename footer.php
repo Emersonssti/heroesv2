@@ -14,6 +14,7 @@
 							
 							<ul class="main-nav__list">
 							<li class=""><a href="index.php">Home</a></li>
+							<li class=""><a href="torneio.php">Torneio</a></li>
 							<li class=""><a href="noticias.php">Notícias</a></li>
 							<li class=""><a href="videos.php">Vídeos</a></li>
 							
@@ -71,6 +72,7 @@
 						<!-- <button class="dl-trigger">Open Menu</button> -->
 						<ul class="dl-menu dl-menuopen">
 							<li><a href="index.php">Home</a></li>
+							<li><a href="inicio.php">Torneio</a></li>
 							<li><a href="noticias.php">Notícias</a></li>
 							<li><a href="videos.php">Vídeos</a></li>
 							<li class="">
