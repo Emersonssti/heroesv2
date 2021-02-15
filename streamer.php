@@ -60,8 +60,16 @@
 			<nav class="main-nav">
 				<ul class="main-nav__list">
 					<li><a href="index.php">Home</a></li>
+					<li><a href="inicio.php">Torneio</a></li>
 					<li><a href="noticias.php">Notícias</a></li>
 					<li><a href="videos.php">Vídeos</a></li>
+					<li>
+						<a href="#">Streamer</a>
+						<ul class="main-nav__sub">
+							<li><a href="streamer.php?streamer=1">BRUNA7CR</a></li>
+							<li><a href="streamer.php?streamer=2">FERNANDON</a></li>
+						</ul>
+					</li>
 					<li><a href="comunidade.php">Comunidade</a></li>
 		
 					<!-- <li class="">

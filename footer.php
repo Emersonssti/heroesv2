@@ -16,6 +16,7 @@
 							<li class=""><a href="index.php">Home</a></li>
 							<li class=""><a href="noticias.php">Notícias</a></li>
 							<li class=""><a href="videos.php">Vídeos</a></li>
+							
 							<li class=""><a href="comunidade.php">Comunidade</a></li>
 						</ul>
 						</nav>
@@ -28,6 +29,11 @@
 					</a>
 				</li>
 				<li class="mobile-bar-item">
+					<a class="mobile-bar-item__header" href="inicio.php">
+						Torneio
+					</a>
+				</li>
+				<li class="mobile-bar-item">
 					<a class="mobile-bar-item__header" href="noticias.php">
 						Notícias
 					</a>
@@ -36,6 +42,20 @@
 					<a class="mobile-bar-item__header" href="videos.php">
 						Vídeos
 					</a>
+				</li>
+				<li class="mobile-bar-item mobile-bar-item--info">
+					<a class="mobile-bar-item__header collapsed" data-toggle="collapse" href="#mobile_collapse_3" role="button" aria-expanded="false" aria-controls="mobile_collapse_3">
+						Streamers
+						<span class="main-nav__toggle">&nbsp;</span>
+					</a>
+					<div id="mobile_collapse_3" class="collapse mobile-bar-item__body">
+						<div class="mobile-bar-item__inner">
+							<ul class="list-unstyled">
+									<li><a href="streamer.php?streamer=1"><span>BRUNA7CR</span></a></li>
+									<li><a href="streamer.php?streamer=2"><span>FERNANDON</span></a></li>
+							</ul>
+						</div>
+					</div>
 				</li>
 				<li class="mobile-bar-item">
 					<a class="mobile-bar-item__header" href="comunidade.php">
@@ -53,7 +73,14 @@
 							<li><a href="index.php">Home</a></li>
 							<li><a href="noticias.php">Notícias</a></li>
 							<li><a href="videos.php">Vídeos</a></li>
-							<li><a href="comunidade.php">Blog</a>
+							<li class="">
+										<a href="#">Streamers</a>
+										<ul class="dl-submenu">
+											<li><a href="streamer.php?streamer=1">BRUNA7CR</a></li>
+											<li><a href="streamer.php?streamer=2">FERNANDON</a></li>
+										</ul>
+									</li>
+							<li><a href="comunidade.php">Comunidade</a>
 						</ul>
 					</div>
 				</div>

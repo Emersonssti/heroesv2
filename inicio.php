@@ -31,7 +31,7 @@ $row_torneio = $sql_temporada->fetch(PDO::FETCH_NUM);
 						s.DESCRICAO
 						FROM torneio t
 							INNER JOIN status_torneio s ON s.ID_STATUS = t.ID_STATUS
-						WHERE t.ID_TEMPORADA = '".$row_torneio[0]."' ORDER BY t.TH";
+						WHERE t.ID_TEMPORADA = '".$row_torneio[0]."' ORDER BY t.TH DESC";
                         foreach ($db_heroes->query($sql) as $result){ 
 
 							// switch ($result[1]) {
