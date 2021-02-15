@@ -6,7 +6,9 @@ $converter = new CommonMarkConverter(); //instanciando um novo conversor
 ?>
 <style>
 th{color:black;}
-
+.team-carousel__content > .slick-dots li{border: 2px solid white;}
+.team-carousel__content > .slick-dots li svg{fill:white}
+.team-carousel__content > .slick-dots li + li:before{border-top: 2px dotted white;}
 </style>
 <? $id_torneio = $_GET["torneio"];
 
@@ -72,7 +74,7 @@ if($result[8] != 1 && $result[8] != 4){ ?>
 
 	
 <!-- Premiação -->
-<div class="team-carousel__item" data-icon="medal">
+<div class="team-carousel__item"aria-selected="true" data-icon="medal">
 	<div class="row">
 		<div class="col-lg-6">
 			<h2 class="player-info-title text-uppercase">Prêmios</h2>
