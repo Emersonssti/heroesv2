@@ -54,6 +54,9 @@
 							<ul class="list-unstyled">
 									<li><a href="streamer.php?streamer=1"><span>BRUNA7CR</span></a></li>
 									<li><a href="streamer.php?streamer=2"><span>FERNANDON</span></a></li>
+									<li><a href="streamer.php?streamer=5"><span>MARKIN CLASH</span></a></li>
+									<li><a href="streamer.php?streamer=3"><span>NIKITA</span></a></li>
+									<li><a href="streamer.php?streamer=6"><span>RAFACOCBR</span></a></li>
 							</ul>
 						</div>
 					</div>
@@ -78,8 +81,11 @@
 							<li class="">
 										<a href="#">Streamers</a>
 										<ul class="dl-submenu">
-											<li><a href="streamer.php?streamer=1">BRUNA7CR</a></li>
-											<li><a href="streamer.php?streamer=2">FERNANDON</a></li>
+											<li><a href="streamer.php?streamer=1"><span>BRUNA7CR</span></a></li>
+											<li><a href="streamer.php?streamer=2"><span>FERNANDON</span></a></li>
+											<li><a href="streamer.php?streamer=5"><span>MARKIN CLASH</span></a></li>
+											<li><a href="streamer.php?streamer=3"><span>NIKITA</span></a></li>
+											<li><a href="streamer.php?streamer=6"><span>RAFACOCBR</span></a></li>
 										</ul>
 									</li>
 							<li><a href="comunidade.php">Comunidade</a>
