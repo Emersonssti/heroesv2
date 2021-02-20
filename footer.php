@@ -63,7 +63,7 @@
 				</li>
 				<li class="mobile-bar-item">
 					<a class="mobile-bar-item__header" href="parceiros.php">
-						Parceioros
+						Parceiros
 					</a>
 				</li>
 				<li class="mobile-bar-item">
@@ -93,7 +93,7 @@
 											<li><a href="streamer.php?streamer=6"><span>RAFACOCBR</span></a></li>
 										</ul>
 									</li>
-							<li><a href="parceiros.php">Comunidade</a>
+							<li><a href="parceiros.php">Parceiros</a>
 							<li><a href="comunidade.php">Comunidade</a>
 						</ul>
 					</div>
