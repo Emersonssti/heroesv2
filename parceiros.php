@@ -9,9 +9,10 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="description" content="Heroes Tournaments">
-	<meta name="author" content="Dan Fisher">
+	<meta name="author" content="Emerson Santos">
 	<meta name="keywords" content="esports team news HTML template">
-<!-- Favicons
+
+	<!-- Favicons
 	================================================== -->
 	<link rel="shortcut icon" href="assets/img/logo.png">
 	<link rel="apple-touch-icon" sizes="120x120" href="assets/img/logo.png">
@@ -41,26 +42,27 @@
 
 </head>
 
-<body class="preloader-is--active preloader--no-transform">
+<body class="site-layout--horizontal preloader-is--active">
 
-	<div class="site-wrapper site-layout--classic">
+	<div class="site-wrapper">
 
-		<!-- Header
+		<!-- Header 
 		================================================== -->
-		<header id="header" class="site-header site-header--top">
+		<header id="header" class="site-header site-header--bottom">
 		
 			<!-- Logo - Image Based -->
 			<div class="header-logo header-logo--img">
-				<a href="index.php"><img src="assets/img/logo.png" srcset="assets/img/logo@2x.png 2x" alt="Necromancers"></a>
+				<a href="index.html"><img src="assets/img/logo.png" srcset="assets/img/logo@2x.png 2x" alt="Necromancers"></a>
 			</div>
 			<!-- Logo - Image Based / End -->
 		
 		
-				<!-- Main Navigation -->
+	
+		<!-- Main Navigation -->
 			<nav class="main-nav">
 				<ul class="main-nav__list">
 					<li><a href="index.php">Home</a></li>
-					<li><a href="inicio.php">Torneio</a></li>
+					<li><a href="inicio.php">Torneios</a></li>
 					<li><a href="noticias.php">Notícias</a></li>
 					<li><a href="videos.php">Vídeos</a></li>
 					<li>
@@ -75,23 +77,25 @@
 					</li>
 					<li><a href="parceiros.php">Parceiros</a></li>
 					<li><a href="comunidade.php">Comunidade</a></li>
-		
-					<!-- <li class="">
-						<a href="#">Shop</a>
-						<ul class="main-nav__sub">
-							<li class=""><a href="shop.html">Shop Page v1</a></li>
-							<li class=""><a href="shop-2.html">Shop Page v2</a></li>
-							<li class=""><a href="shop-product.html">Product Page</a></li>
-							<li class=""><a href="shop-checkout.html">Checkout Page</a></li>
-						</ul>
-					</li> -->
+
 				</ul>
 			</nav>
 			<!-- Main Navigation / End -->
-		
-			<!-- Header Actions -->
-			<div class="header-actions">
+				<!-- Header Actions -->
+				<div class="header-actions">
 				<div class="header-account hide">
+					<div class="header-account__icon">
+						<a href="shop-account-settings.html">
+							<svg role="img" class="df-icon df-icon--account">
+								<use xlink:href="assets/img/necromancers.svg#account"/>
+							</svg>
+						</a>
+						<a href="login-register.html">
+							<svg role="img" class="df-icon df-icon--logout">
+								<use xlink:href="assets/img/necromancers.svg#logout"/>
+							</svg>
+						</a>
+					</div>
 				</div>
 				<div class="header-menu-toggle">
 					<div class="header-menu-toggle__inner">
@@ -101,77 +105,63 @@
 					</div>
 				</div>
 			</div>
+	
+			<!-- Header Actions / End -->
 		</header>
 		<!-- Header / End -->
 
-
-		<? $id = $_GET["streamer"]; 
-		
-		$sql = $db_heroes->prepare("SELECT
-			NOME_CANAL
-		FROM streamer
-		WHERE ID_STREAMER = '".$id."'");
-		$sql->execute();
-		$result = $sql->fetch(PDO::FETCH_NUM);
-		
-		
-		?>
-
-
-		<!-- Site Heading
-		================================================== -->
-		<div class="page-header page-header--has-overlay">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12">
-						<h1 class="page-header__title"><?= $result[0];?></h1>
-					</div>
-				</div>
-			</div>
-		</div>
-		
 		<!-- Content
 		================================================== -->
-		<main class="site-content blog-layout--classic" id="wrapper">
-		
-			<div class="site-content__inner">
-				<div class="site-content__holder">
-		
-					<div class="container">
-						<div class="row">
+		<main class="site-content" id="wrapper">
+			
+			<div class="page-heading page-heading--loop page-heading--partners bg-image bg--ph-01">
+				<div class="page-heading__subtitle h5 color-primary">Heroes Tournaments</div>
+				<h1 class="page-heading__title h2">Parceiros</h1>
+				<div class="page-heading__body">
+					<div class="h6 text-sm color-primary">Quer se tornar um parceiro?</div>
+					<div class="h6"><a href="mailto:#">contato@torneioheroes.com</a></div>
+				</div>
+			</div>
 
-
-<?
-	 	$sql = "SELECT
-		*
-		 FROM assista
-		 WHERE ID_ASSISTA AND ID_STREAMER = '".$id."'
-		 ORDER BY DATA LIMIT 16";
+			<div class="content partners-layout">
+		
+		<?
+		 $sql = "SELECT
+		 LOGO,
+		 NOME,
+		 TITULO,
+		 LINK_TITULO,
+		 DESCRICAO,
+		 ID_PARCEIRO
+		 FROM parceiro
+		 ORDER BY ID_PARCEIRO";
 		 foreach ($db_heroes->query($sql) as $result){ 
-		
-?>
-<div class="col-lg-6" style="padding-top: 30px;">
-		
+	 	 ?>
+				<article class="partner">
+					<div class="partner__logo">
+						<img src="assets/img/parceiro/<?=$result[0]?>" alt="Honeycomb">
+					</div>
+					<div class="partner__header">
+						<h2 class="partner__title h4"><?=$result[1]?></h2>
+						<a href="<?=$result[3]?>" class="partner__info"><?=$result[2]?></a>
+					</div>
+					<p class="partner__excerpt"><?=$result[4]?></p>
+					<ul class="social-menu social-menu--links">
+						<?
+							$sql_ = "SELECT
+							LINK
+							FROM parceiro_contato
+								WHERE ID_PARCEIRO = '".$result[5]."'
+							ORDER BY REDE_SOCIAL";
+							foreach ($db_heroes->query($sql_) as $result_){ 
+						?>
+							<li><a href="<?=$result_[0]?>"></a></li>
 
-	<article class="post has-post-thumbnail ">
-
-		<iframe width="853" height="480" src="<?= $result[1];?>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-	</article>
-
-</div>
-		<?}?>		
-
-
-									</div>
-								</div>
-								<!-- Latest Posts / End -->
-		
-		
-							</div>
-		
-						</div>
-					
+						<?}?>
+					</ul>
+				</article>
+				<?}?>
+			</div>
+			
 		</main>
-
 		<?php include "footer.php"; ?>

@@ -73,6 +73,7 @@
 							<li><a href="streamer.php?streamer=6"><span>RAFACOCBR</span></a></li>
 						</ul>
 					</li>
+					<li><a href="parceiro.php">Parceiros</a></li>
 					<li><a href="comunidade.php">Comunidade</a></li>
 		
 					<!-- <li class="">
