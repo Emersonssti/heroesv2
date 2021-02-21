@@ -59,28 +59,8 @@
 			<!-- Logo - Image Based / End -->
 		
 		
-			<!-- Main Navigation -->
-			<nav class="main-nav">
-				<ul class="main-nav__list">
-					<li><a href="index.php">Home</a></li>
-					<li><a href="inicio.php">Torneio</a></li>
-					<li><a href="noticias.php">Notícias</a></li>
-					<li><a href="videos.php">Vídeos</a></li>
-					<li>
-						<a href="#">Streamer</a>
-						<ul class="main-nav__sub">
-								<li><a href="streamer.php?streamer=1"><span>BRUNA7CR</span></a></li>
-								<li><a href="streamer.php?streamer=2"><span>FERNANDON</span></a></li>
-								<li><a href="streamer.php?streamer=5"><span>MARKIN CLASH</span></a></li>
-								<li><a href="streamer.php?streamer=3"><span>NIKITA</span></a></li>
-								<li><a href="streamer.php?streamer=6"><span>RAFACOCBR</span></a></li>
-						</ul>
-					</li>
-					<li><a href="parceiros.php">Parceiros</a></li>
-					<li><a href="comunidade.php">Comunidade</a></li>
-				</ul>
-			</nav>
-			<!-- Main Navigation / End -->
+		<? include "navbar.php"; ?>
+			
 		
 			<!-- Header Actions -->
 			<div class="header-actions">

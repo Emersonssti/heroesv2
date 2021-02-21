@@ -54,33 +54,11 @@
 			<div class="header-logo header-logo--img">
 				<a href="index.html"><img src="assets/img/logo.png" srcset="assets/img/logo@2x.png 2x" alt="Necromancers"></a>
 			</div>
-			<!-- Logo - Image Based / End -->
 		
 		
-	
-		<!-- Main Navigation -->
-			<nav class="main-nav">
-				<ul class="main-nav__list">
-					<li><a href="index.php">Home</a></li>
-					<li><a href="inicio.php">Torneios</a></li>
-					<li><a href="noticias.php">Notícias</a></li>
-					<li><a href="videos.php">Vídeos</a></li>
-					<li>
-						<a href="#">Streamer</a>
-						<ul class="main-nav__sub">
-								<li><a href="streamer.php?streamer=1"><span>BRUNA7CR</span></a></li>
-								<li><a href="streamer.php?streamer=2"><span>FERNANDON</span></a></li>
-								<li><a href="streamer.php?streamer=5"><span>MARKIN CLASH</span></a></li>
-								<li><a href="streamer.php?streamer=3"><span>NIKITA</span></a></li>
-								<li><a href="streamer.php?streamer=6"><span>RAFACOCBR</span></a></li>
-						</ul>
-					</li>
-					<li><a href="parceiros.php">Parceiros</a></li>
-					<li><a href="comunidade.php">Comunidade</a></li>
+			<? include "navbar.php"; ?>
 
-				</ul>
-			</nav>
-			<!-- Main Navigation / End -->
+
 				<!-- Header Actions -->
 				<div class="header-actions">
 				<div class="header-account hide">
