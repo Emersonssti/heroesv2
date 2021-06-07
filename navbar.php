@@ -2,11 +2,12 @@
 				<ul class="main-nav__list">
 				
 				<?//Menu Principal
-					$sql_nav = "SELECT DESCRICAO, LINK, ID_NAVBAR FROM navbar ORDER BY SEQ";
+					$sql_nav = "SELECT DESCRICAO, LINK, ID_NAVBAR, CLASSE FROM navbar ORDER BY SEQ";
 					foreach ($db_confi->query($sql_nav) as $r_nav){ 
 				?>
-					<li><a href="<?=$r_nav[1]?>"><?=$r_nav[0]?></a>
+					<li><a class="<?=$r_nav[3]?>" href="<?=$r_nav[1]?>"><?=$r_nav[0]?></a>
 								
+
 								<?//SubMenu
 								if($r_nav[1] == '#'){?>
 									<ul class="main-nav__sub">
