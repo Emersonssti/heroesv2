@@ -6,7 +6,7 @@ $cv_torneio =  $_GET["cv_torneio"];
 // $tag_vila =  "#RLR2GOCC";
 
 
-$token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiIsImtpZCI6IjI4YTMxOGY3LTAwMDAtYTFlYi03ZmExLTJjNzQzM2M2Y2NhNSJ9.eyJpc3MiOiJzdXBlcmNlbGwiLCJhdWQiOiJzdXBlcmNlbGw6Z2FtZWFwaSIsImp0aSI6IjVjMmMzYWVkLTJlNzEtNDI3ZC05OTVlLTFjOGQxMTFjMWYxYyIsImlhdCI6MTYxMTUyNDU2OSwic3ViIjoiZGV2ZWxvcGVyLzE0YTdhZjExLTU0MzQtYTc0MC0wNWVjLTEzMmM5MmJjNmUyOSIsInNjb3BlcyI6WyJjbGFzaCJdLCJsaW1pdHMiOlt7InRpZXIiOiJkZXZlbG9wZXIvc2lsdmVyIiwidHlwZSI6InRocm90dGxpbmcifSx7ImNpZHJzIjpbIjE3Ny4yMjEuMjE3Ljk2Il0sInR5cGUiOiJjbGllbnQifV19.RkeZT6zwBN7LPvOnxQ9m1lHyKAOoVlYTB5RYfAVajbt5SGKXg4t2NhfprvfhM36AbWs9sD82CSIttBtfHHDd_g";
+$token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiIsImtpZCI6IjI4YTMxOGY3LTAwMDAtYTFlYi03ZmExLTJjNzQzM2M2Y2NhNSJ9.eyJpc3MiOiJzdXBlcmNlbGwiLCJhdWQiOiJzdXBlcmNlbGw6Z2FtZWFwaSIsImp0aSI6IjVhOWFmZTAxLWI4MWUtNDJkZi04MDkxLTg0YmRlN2I1ZWE3NCIsImlhdCI6MTYyMzExMjU4OCwic3ViIjoiZGV2ZWxvcGVyLzE0YTdhZjExLTU0MzQtYTc0MC0wNWVjLTEzMmM5MmJjNmUyOSIsInNjb3BlcyI6WyJjbGFzaCJdLCJsaW1pdHMiOlt7InRpZXIiOiJkZXZlbG9wZXIvc2lsdmVyIiwidHlwZSI6InRocm90dGxpbmcifSx7ImNpZHJzIjpbIjIwMS4xMi42OC4xODEiXSwidHlwZSI6ImNsaWVudCJ9XX0.E7IrXz7QME18cCGFO7jPH9f1-uwquen7uyCA2oY9sk2KbJQEWjoHhFaXmpod7fR9xGHlAJc3To1Cug7wpC0soQ";
 
 $url = "https://api.clashofclans.com/v1/players/" . urlencode($tag_vila);
 
@@ -24,7 +24,6 @@ curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 $res = curl_exec($ch);
 $data = json_decode($res, true);
 curl_close($ch);
-
 if (isset($data["reason"])) {
 
   echo 0;
