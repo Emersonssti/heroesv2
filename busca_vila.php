@@ -1,8 +1,5 @@
 <?
 $tag_vila =  '#'.$_GET["tag_vila"];
-$cv_torneio =  $_GET["cv_torneio"];
-// $tag_vila =  "#RLR2GOCC";
-
 
 $token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiIsImtpZCI6IjI4YTMxOGY3LTAwMDAtYTFlYi03ZmExLTJjNzQzM2M2Y2NhNSJ9.eyJpc3MiOiJzdXBlcmNlbGwiLCJhdWQiOiJzdXBlcmNlbGw6Z2FtZWFwaSIsImp0aSI6IjVhOWFmZTAxLWI4MWUtNDJkZi04MDkxLTg0YmRlN2I1ZWE3NCIsImlhdCI6MTYyMzExMjU4OCwic3ViIjoiZGV2ZWxvcGVyLzE0YTdhZjExLTU0MzQtYTc0MC0wNWVjLTEzMmM5MmJjNmUyOSIsInNjb3BlcyI6WyJjbGFzaCJdLCJsaW1pdHMiOlt7InRpZXIiOiJkZXZlbG9wZXIvc2lsdmVyIiwidHlwZSI6InRocm90dGxpbmcifSx7ImNpZHJzIjpbIjIwMS4xMi42OC4xODEiXSwidHlwZSI6ImNsaWVudCJ9XX0.E7IrXz7QME18cCGFO7jPH9f1-uwquen7uyCA2oY9sk2KbJQEWjoHhFaXmpod7fR9xGHlAJc3To1Cug7wpC0soQ";
 
@@ -24,22 +21,12 @@ $data = json_decode($res, true);
 curl_close($ch);
 if (isset($data["reason"])) {
 
-  echo 0;
+  echo 'erro ao buscar dados';
 
 }else{
 
-    $th = $data["townHallLevel"];
+  echo $nick = $data["name"];
 
-    if($th != $cv_torneio){
-
-      echo 1;
-    }else{
-
-      $th = $data["townHallLevel"];
-      $nick = $data["name"];
-      echo $th.'-'.$nick;
-
-    }
   
 }
 
