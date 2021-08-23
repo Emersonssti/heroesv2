@@ -111,7 +111,7 @@ if(!$update){
     $dado = $_GET["dado"];
  
      
-    $update = $db_heroes->query("UPDATE ranking SET ".$coluna." = ('".$dado."') WHERE ID_RANKING = ('".$id."')");
+    $update = $db_heroes->query("UPDATE ranking_ SET ".$coluna." = ('".$dado."') WHERE ID_RANKING = ('".$id."')");
     if(!$update){
         echo 0;
     }else{
