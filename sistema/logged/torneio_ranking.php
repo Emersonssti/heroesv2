@@ -25,7 +25,7 @@
                                     VITORIA,
                                     ESTRELA,
                                     PORCENTAGEM
-                                    FROM ranking
+                                    FROM ranking_
                                       WHERE ID_TORNEIO = '".$result_torneio[4]."' ORDER BY VITORIA DESC, ESTRELA DESC, PORCENTAGEM DESC";
                                       foreach ($db_heroes->query($sql) as $result){ 
                                     ?>
